@@ -1,4 +1,44 @@
-[
+<<<<<<< HEAD:grupo 1/lalala.js
+
+
+ const author = "Grupo bonito";
+ document.getElementById("autor").innerHTML= author;
+
+
+ const svg = document.getElementById("main-svg-container");
+ 
+ const WIDTH = 400,
+       HEIGHT = 300;
+ 
+ 
+ svg.setAttribute("width",WIDTH)
+ svg.setAttribute("height",HEIGHT)
+ 
+ const margins = {top:10, bottom:20, left:40,right:20};
+ 
+ 
+ 
+ const width = WIDTH-margins.left-margins.right,
+       height = HEIGHT-margins.top-margins.bottom;
+ 
+
+ const bubbleContainer = document.createElementNS("http://www.w3.org/2000/svg", "g");
+ bubbleContainer.setAttribute("id","bubble-container");
+ svg.appendChild(bubbleContainer);
+ 
+
+ 
+ const background =document.createElementNS("http://www.w3.org/2000/svg", "rect");
+ background.setAttribute("x",margins.left);
+ background.setAttribute("y",margins.top);
+ background.setAttribute("height",height);
+ background.setAttribute("width",width);
+ background.setAttribute("fill","lightgrey");
+ 
+ bubbleContainer.appendChild(background);
+ 
+
+const datos = [
  {
    "ano": 2019,
    "Mes": "Ene",
@@ -480,3 +520,75 @@
    "FIELD14": ""
  }
 ]
+
+
+
+const xVariable = "mes",
+      aVariable = "año",
+      yVariable = "Total de Conexiones";
+
+
+
+const xDataRange = {
+    min: 0,
+    max: 0
+}
+
+const yDataRange = {
+    min: 0,
+    max: 0
+};
+
+const aDataRange = {
+    min: 0,
+    max: 0
+};
+
+
+// w es el el grupo de cada dato, mes año y total de conexiones
+for (const w of datos){
+    // Rellenar
+    //console.log(w);
+    
+    const xValue=w.Mes[xVariable],
+          aValue=w.ano[aVariable],
+          yValue=w.Total_Conexiones_Moviles[yVariable];
+    
+    };
+
+
+// Obtener una referencia al elemento canvas del DOM
+const $grafica = document.querySelector("#grafica");
+// Las etiquetas son las que van en el eje X. 
+const etiquetas = ["Enero", "Febrero", "Marzo", "Abril"]
+// Podemos tener varios conjuntos de datos. Comencemos con uno
+const datosVentas2020 = {
+    label: "Ventas por mes",
+    data: [5000, 1500, 8000, 5102], // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
+    backgroundColor: 'rgba(54, 162, 235, 0.2)', // Color de fondo
+    borderColor: 'rgba(54, 162, 235, 1)', // Color del borde
+    borderWidth: 1,// Ancho del borde
+};
+
+
+new Chart($grafica, {
+    type: 'line',// Tipo de gráfica
+    data: {
+        labels: etiquetas,
+        datasets: [
+            datosVentas2020,
+            // Aquí más datos...
+        ]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }],
+        },
+    }
+});
+
+    
