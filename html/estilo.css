@@ -1,0 +1,25 @@
+.todo{
+    background-color:rgb(30, 30, 88)
+    font-size: 30px;
+    color:rgb(211, 211, 211);
+    font-family: 'Apple Color Emoji', Regular, monospace;
+    padding: 20px 15px
+}
+.par{
+    background:paleturquoise
+}
+.tit{
+    text-align: center;
+}
+
+.todito{
+    font-size: 30px;
+    color:rgb(211, 211, 211);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px 15px
+    
+}
+
+body {background-color: rgb(0, 0, 58);}
+
+ 
