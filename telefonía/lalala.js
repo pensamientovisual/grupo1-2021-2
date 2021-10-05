@@ -527,10 +527,10 @@ const etiquetas = lista1;
 
 // Podemos tener varios conjuntos de datos. Comencemos con uno
 const datosjeje = {
-    label: "Ventas por mes",
+    label: "Total Conexiones Moviles",
     data: lista2, // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
-    backgroundColor: 'rgba(211, 211, 211)', // Color de fondo
-    borderColor: 'rgba(211,211,211)', // Color del borde
+    backgroundColor: 'rgba(54, 162, 235, 0.2)', // Color de fondo
+    borderColor: 'rgba(54, 162, 235, 1)', // Color del borde
     borderWidth: 3,// Ancho del borde
 };
 
