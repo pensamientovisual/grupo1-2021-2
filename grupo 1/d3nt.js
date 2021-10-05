@@ -3172,10 +3172,19 @@ for (const pokemon of kantodex) {
     bubble.setAttribute("opacity",0.3);
 
     bubbleContainer.appendChild(bubble);
-
-
-
 }
+
+
+//
+
+
+
+
+
+
+
+
+
 
 /**
  * ¿¡QUIEN ES ESE POKEMON!? ¡¡¡¡ES BUBBLECHART!!!!

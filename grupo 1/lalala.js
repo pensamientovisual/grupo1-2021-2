@@ -2,10 +2,6 @@
 
  const author = "Grupo bonito";
  document.getElementById("autor").innerHTML= author;
-jñdgnsedñogverpfv
-hola conchjetumareee
- 
-uwuuwuwuwuuwuwuwuwuuwuw
 
 
  const svg = document.getElementById("main-svg-container");
@@ -16,12 +12,9 @@ uwuuwuwuwuuwuwuwuwuuwuw
  const WIDTH = 400,
        HEIGHT = 300;
  
-ebqivjdcm´
-qepc
  
  svg.setAttribute("width",WIDTH)
  svg.setAttribute("height",HEIGHT)
- ervjonerv
  
  const margins = {top:10, bottom:20, left:40,right:20};
  
@@ -546,14 +539,15 @@ const xDataRange = {
 const yDataRange = {
     min: 0,
     max: 0
-}
+};
 
 const aDataRange = {
     min: 0,
     max: 0
-}
+};
 
 
+// w es el el grupo de cada dato, mes año y total de conexiones
 for (const w of datos){
     // Rellenar
     console.log(w);
@@ -562,7 +556,10 @@ for (const w of datos){
           aValue=w.ano[aVariable],
           yValue=w.Total_Conexiones_Moviles[yVariable];
     
-    }   
+    };
+
+
 
     
+
 
