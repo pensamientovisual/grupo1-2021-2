@@ -1,55 +1,70 @@
-.todo{
-    background-color:rgb(30, 30, 88);
-    font-size: 30px;
-    color:rgb(211, 211, 211);
-    font-family: 'Apple Color Emoji', Regular, monospace;
-    padding:20px 15px
+.todo {
+  background-color: rgb(30, 30, 88);
+  font-size: 30px;
+  color: rgb(211, 211, 211);
+  font-family: "Apple Color Emoji", Regular, monospace;
+  padding: 20px 15px;
 }
-.par{
-    background:paleturquoise
+.par {
+  background: paleturquoise;
 }
-.tit{
-    text-align: center;
-}
-
-.todito{
-    font-size: 30px;
-    color:rgb(211, 211, 211);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 20px 15px
-    
+.tit {
+  text-align: center;
 }
 
-body {background-color: rgb(0, 0, 58);}
+.todito {
+  font-size: 30px;
+  color: rgb(211, 211, 211);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 20px 15px;
+}
+
+body {
+  background-color: rgb(0, 0, 58);
+}
 
 div.icono {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-  }
+  display: flex;
+  flex-direction: row;
+  align-items: CE;
+  text-align: center;
+}
 
 div.i1 {
-    padding: 30px;
-    background-color:rgb(30, 30, 88);
-    margin: 30px 30px 30px 210px;
-  }
+  padding: 30px;
+  background-color: rgb(30, 30, 88);
+  margin: auto;
+}
 div.i2 {
-    padding: 30px;
-    background-color:rgb(30, 30, 88);
-    margin: 30px 100px 30px 30px;
-  }
+  padding: 30px;
+  background-color: rgb(30, 30, 88);
+  margin: auto;
+}
 div.i3 {
-    padding: 30px;
-    background-color:rgb(30, 30, 88);
-    margin: 30px 30px 30px 30px;
-  }
+  padding: 30px;
+  background-color: rgb(30, 30, 88);
+  margin: auto;
+}
 div.i1:hover {
-    background-color:rgb(46, 46, 109);
-  }
+  background-color: rgb(46, 46, 109);
+}
 div.i2:hover {
-    background-color:rgb(46, 46, 109);
-  }
+  background-color: rgb(46, 46, 109);
+}
 div.i3:hover {
-    background-color:rgb(46, 46, 109);
-  }
+  background-color: rgb(46, 46, 109);
+}
+
+div.todo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+div.ABAJITO {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
