@@ -68,3 +68,9 @@ div.ABAJITO {
   align-items: center;
   text-align: center;
 }
+
+div.todito {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
