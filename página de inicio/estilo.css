@@ -55,6 +55,12 @@ div.i3:hover {
   background-color: rgb(46, 46, 109);
 }
 
+div.fila:hover{
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+
 div.todo {
   display: flex;
   flex-direction: column;
@@ -62,9 +68,3 @@ div.todo {
   text-align: center;
 }
 
-div.ABAJITO {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
