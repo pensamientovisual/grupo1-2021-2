@@ -1,9 +1,9 @@
 .todo{
-    background-color:rgb(30, 30, 88)
+    background-color:rgb(30, 30, 88);
     font-size: 30px;
     color:rgb(211, 211, 211);
     font-family: 'Apple Color Emoji', Regular, monospace;
-    padding: 20px 15px
+    padding:20px 15px
 }
 .par{
     background:paleturquoise

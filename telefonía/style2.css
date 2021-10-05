@@ -1,0 +1,66 @@
+body {
+  font-family: "monument", "roboto";
+  width: 90%;
+  margin: auto;
+}
+
+h2 {
+  text-decoration: underline magenta;
+}
+
+h1 {
+  text-decoration: double underline rgb(0, 255, 200);
+}
+
+h3 {
+  color: gray;
+}
+
+p {
+  text-indent: 1.5em;
+  text-align: justify;
+}
+
+.fuente {
+  text-align: right;
+  font-style: italic;
+}
+
+span.magenta-font {
+  color: magenta;
+}
+
+img {
+  height: 200px;
+}
+
+div.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+div.flex-container#css-section {
+  flex-direction: row-reverse;
+}
+
+div.flex-container-paragraph {
+  flex: 8;
+}
+
+div.flex-image {
+  flex: 4;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+}
+
+div.flex-paragraph {
+  flex: 8;
+}
+
+div.flex-svg {
+  flex: 4;
+  padding: 5%;
+  align-items: center;
+  text-align: center;
+}
