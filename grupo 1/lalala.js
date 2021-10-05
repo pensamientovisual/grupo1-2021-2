@@ -2,7 +2,7 @@
 
  const author = "Grupo bonito";
  document.getElementById("autor").innerHTML= author;
- // uwuuuuu
+jñdgnsedñogverpfv
 
  
  const svg = document.getElementById("main-svg-container");
@@ -13,12 +13,12 @@
  const WIDTH = 400,
        HEIGHT = 300;
  
-
+ebqivjdcm´
+qepc
  
  svg.setAttribute("width",WIDTH)
  svg.setAttribute("height",HEIGHT)
- 
- 
+ ervjonerv
  
  const margins = {top:10, bottom:20, left:40,right:20};
  
