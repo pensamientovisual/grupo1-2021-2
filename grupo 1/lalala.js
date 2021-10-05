@@ -3,8 +3,11 @@
  const author = "Grupo bonito";
  document.getElementById("autor").innerHTML= author;
 jñdgnsedñogverpfv
-
+hola conchjetumareee
  
+
+
+
  const svg = document.getElementById("main-svg-container");
  
  
