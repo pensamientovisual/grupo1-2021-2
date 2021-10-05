@@ -2,7 +2,7 @@
 
  const author = "Grupo bonito";
  document.getElementById("autor").innerHTML= author;
- 
+ // uwuuuuu
 
  
  const svg = document.getElementById("main-svg-container");
