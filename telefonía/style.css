@@ -1,21 +1,9 @@
 body {
-<<<<<<< HEAD
   background-color: rgb(255, 255, 255);
   font-family: "Apple Color Emoji", Regular, monospace;
-=======
-  font-family: 'Apple Color Emoji', Regular, monospace;
   width: 90%;
   font-size: 30px;
-  margin: auto;
-  padding:20px 15px
-}
-.todin{
-  background-color:rgb(30, 30, 88);
-  font-family: 'Apple Color Emoji', Regular, monospace;
->>>>>>> ca2e105f5f808317618d924e8e7b6b0ef90ab453
-  width: 90%;
-  font-size: 30px;
-  color: rgb(211, 211, 211);
+  color: rgb(22, 22, 22);
   margin: auto;
   padding: 20px 15px;
 }

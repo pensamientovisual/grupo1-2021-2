@@ -1,7 +1,7 @@
 
 
- const author = "Grupo bonito";
- document.getElementById("autor").innerHTML= author;
+ //const author = "Grupo bonito";
+ //document.getElementById("autor").innerHTML= author;
 
 
  const svg = document.getElementById("main-svg-container");
