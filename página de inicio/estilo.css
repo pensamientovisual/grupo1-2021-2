@@ -31,13 +31,25 @@ div.icono {
 
 div.i1 {
     padding: 30px;
+    background-color:rgb(30, 30, 88);
     margin: 30px 30px 30px 210px;
   }
 div.i2 {
     padding: 30px;
+    background-color:rgb(30, 30, 88);
     margin: 30px 100px 30px 30px;
   }
 div.i3 {
     padding: 30px;
+    background-color:rgb(30, 30, 88);
     margin: 30px 30px 30px 30px;
+  }
+div.i1:hover {
+    background-color:rgb(46, 46, 109);
+  }
+div.i2:hover {
+    background-color:rgb(46, 46, 109);
+  }
+div.i3:hover {
+    background-color:rgb(46, 46, 109);
   }
