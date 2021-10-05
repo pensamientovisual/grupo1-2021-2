@@ -1,8 +1,12 @@
-<<<<<<< HEAD:grupo 1/style.css
+
 body {
-  font-family: "roboto", sans-serif;
+  background-color:rgb(30, 30, 88);
+  font-family: 'Apple Color Emoji', Regular, monospace;
   width: 90%;
+  font-size: 30px;
+  color:rgb(211, 211, 211);
   margin: auto;
+  padding:20px 15px
 }
 
 h1 {
@@ -82,7 +86,7 @@ text.x-tick {
 text.y-tick {
   font-size: 10px;
 }
-=======
+
 body {
   font-family: "roboto", sans-serif;
   width: 90%;
@@ -166,4 +170,3 @@ text.x-tick {
 text.y-tick {
   font-size: 10px;
 }
->>>>>>> b0b647c21f9898b538f1af43e0658323d39a7ddc:telefonía/style.css
