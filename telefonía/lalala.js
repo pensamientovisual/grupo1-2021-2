@@ -6,8 +6,8 @@
 
  const svg = document.getElementById("main-svg-container");
  
- const WIDTH = 400,
-       HEIGHT = 300;
+ const WIDTH = 100,
+       HEIGHT = 100;
  
  
  svg.setAttribute("width",WIDTH)
@@ -530,8 +530,8 @@ const datosjeje = {
     label: "Ventas por mes",
     data: lista2, // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
     backgroundColor: 'rgba(54, 162, 235, 0.2)', // Color de fondo
-    borderColor: 'rgba(54, 162, 235, 1)', // Color del borde
-    borderWidth: 1,// Ancho del borde
+    borderColor: 'rgba(211,211,211)', // Color del borde
+    borderWidth: 3,// Ancho del borde
 };
 
 
