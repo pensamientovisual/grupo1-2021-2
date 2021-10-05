@@ -536,7 +536,7 @@ const datosjeje = {
 
 
 new Chart($grafica, {
-    type: 'line',// Tipo de gráfica
+    type: 'bar',// Tipo de gráfica
     data: {
         labels: etiquetas,
         datasets: [
