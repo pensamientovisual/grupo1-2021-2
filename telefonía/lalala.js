@@ -21,20 +21,20 @@
        height = HEIGHT-margins.top-margins.bottom;
  
 
- const bubbleContainer = document.createElementNS("http://www.w3.org/2000/svg", "g");
- bubbleContainer.setAttribute("id","bubble-container");
- svg.appendChild(bubbleContainer);
+//  const bubbleContainer = document.createElementNS("http://www.w3.org/2000/svg", "g");
+//  bubbleContainer.setAttribute("id","bubble-container");
+//  svg.appendChild(bubbleContainer);
  
 
  
- const background =document.createElementNS("http://www.w3.org/2000/svg", "rect");
- background.setAttribute("x",margins.left);
- background.setAttribute("y",margins.top);
- background.setAttribute("height",height);
- background.setAttribute("width",width);
- background.setAttribute("fill","lightgrey");
+//  const background =document.createElementNS("http://www.w3.org/2000/svg", "rect");
+//  background.setAttribute("x",margins.left);
+//  background.setAttribute("y",margins.top);
+//  background.setAttribute("height",height);
+//  background.setAttribute("width",width);
+//  background.setAttribute("fill","lightgrey");
  
- bubbleContainer.appendChild(background);
+//  bubbleContainer.appendChild(background);
  
 
 const datos = [
@@ -545,6 +545,14 @@ new Chart($grafica, {
         ]
     },
     options: {
+        legend: {
+            labels: {
+              // This more specific font property overrides the global property
+                fontColor: 'red'
+            }
+        },
+
+
         scales: {
             yAxes: [{
                 ticks: {
