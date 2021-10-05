@@ -51,12 +51,22 @@ div.i3:hover {
   background-color: rgb(46, 46, 109);
 }
 
+<<<<<<< HEAD
 #fi {
   flex-direction: column;
   position: relative;
 
   align-items: center;
   text-align: center;
+=======
+#fi{
+flex-direction: column;
+margin-top: 150px;
+margin-left: 30px;
+position: relative;
+align-items: center;
+text-align: center;
+>>>>>>> afc139b463c1e8074fbd91a0b2f9a8db1cc916d9
 }
 
 div.todo {
