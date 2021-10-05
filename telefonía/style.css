@@ -1,5 +1,12 @@
 
 body {
+  font-family: 'Apple Color Emoji', Regular, monospace;
+  width: 90%;
+  font-size: 30px;
+  margin: auto;
+  padding:20px 15px
+}
+.todin{
   background-color:rgb(30, 30, 88);
   font-family: 'Apple Color Emoji', Regular, monospace;
   width: 90%;
@@ -160,7 +167,6 @@ div.img-container {
 }
 
 div.svg-container {
-  margin: ;
 }
 
 text.x-tick {
