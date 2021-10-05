@@ -21,3 +21,23 @@
 }
 
 body {background-color: rgb(0, 0, 58);}
+
+div.icono {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+  }
+
+div.i1 {
+    padding: 30px;
+    margin: 30px 30px 30px 210px;
+  }
+div.i2 {
+    padding: 30px;
+    margin: 30px 100px 30px 30px;
+  }
+div.i3 {
+    padding: 30px;
+    margin: 30px 30px 30px 30px;
+  }
