@@ -1,5 +1,8 @@
-
 body {
+<<<<<<< HEAD
+  background-color: rgb(255, 255, 255);
+  font-family: "Apple Color Emoji", Regular, monospace;
+=======
   font-family: 'Apple Color Emoji', Regular, monospace;
   width: 90%;
   font-size: 30px;
@@ -9,16 +12,17 @@ body {
 .todin{
   background-color:rgb(30, 30, 88);
   font-family: 'Apple Color Emoji', Regular, monospace;
+>>>>>>> ca2e105f5f808317618d924e8e7b6b0ef90ab453
   width: 90%;
   font-size: 30px;
-  color:rgb(211, 211, 211);
+  color: rgb(211, 211, 211);
   margin: auto;
-  padding:20px 15px
+  padding: 20px 15px;
 }
 
 h1 {
   margin-bottom: 0%;
-  text-decoration: double underline red;
+  /* text-decoration: double underline red; */
 }
 
 h2 {
@@ -101,8 +105,10 @@ body {
 }
 
 h1 {
-  margin-bottom: 0%;
-  text-decoration: double underline red;
+  flex: 4;
+  text-align: center;
+  align-items: center;
+  margin: auto;
 }
 
 h2 {
