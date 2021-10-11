@@ -15,3 +15,40 @@ body {
   border-style: solid;
   background-color: whitesmoke;
 }
+div.icono {
+  display: flex;
+  flex-direction: row;
+  align-items: CE;
+  text-align: center;
+}
+div.i3 {
+  display: flex;
+  flex-direction: row;
+  align-items: CE;
+  text-align: center;
+}
+div.i1 {
+  padding: 30px;
+  background-color: rgb(50, 213, 224);
+  margin: auto;
+}
+div.i2 {
+  padding: 30px;
+  background-color: rgb(50, 213, 224);
+  margin: auto;
+}
+div.i3 {
+  padding: 30px;
+  background-color: rgb(50, 213, 224);
+  margin: auto;
+}
+div.i1:hover {
+  background-color: rgb(46, 46, 109);
+}
+div.i2:hover {
+  background-color: rgb(46, 46, 109);
+}
+div.i3:hover {
+  background-color: rgb(46, 46, 109);
+  text-align: center;
+}
