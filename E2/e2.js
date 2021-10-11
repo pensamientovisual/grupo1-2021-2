@@ -688,9 +688,11 @@ const data_amazon =[
   }
  ]
 
+consts data_amazon2= src="./AMAZON.json"
 
-const width = 800;
-const height = 400;
+console.log(data_amazon2);
+const width = 1000;
+const height = 500;
 const margin = {
   top: 70,
   bottom: 70,
@@ -704,27 +706,28 @@ const svg = d3.select("#d3-contenedor1")
   .attr('width', width-margin.ledt-margin.right)
   .attr('viewBox',[0,0,width,height]);
 
-const x1 = d3.selectBand()
-  .domain(d3.range(data_amazon.lenght))
+const x1 = d3.scaleBand()
+  .domain(d3.range(.lenght))
   .range([margin.left,width-margin.right])
   .padding(0.1);
 
 console.log(x1)
 
-const y1 = d3.selectBand()
+const y1 = d3.scaleBand()
   .domain(d3.range([0,113.08]))
   .range([height-margin.bottom,margin.top])
   .padding(0.1);
 
-svg
-  .append('g')
-  .attr('fill','royalblue')
-  .selectAll('rect')
-  .data_amazon(data_amazon.sort((a,b) => d3.descending(a.score,b.score))
-  .join('rect')
-    .attr('x',(d,i) =>x1(i))
-    .attr('y',y1(d.score))
-    .attr('height',d => y1(0)-y1(d.score))
+console.log(x1)
+
+svg.append('g')
+   .attr('fill','royalblue')
+   .selectAll('rect')
+   .join('rect')
+    .attr('x',x1(d."ano_quatrimistre"))
+    //.attr('x',(d,i) =>x1(i))
+    .attr('y',y1(d."ventas_billion_Us_dollars"))
+    //.attr('height',d => y1(0)-y1(d.ventas_ billion_Us_dollars))
     .attr('width',x.bandwidth())
 
 
@@ -733,10 +736,4 @@ svg.node();
 
 
 // Cargamos el archivo CSV
-d3.csv("./amazon.csv")
-  .then( (datos) => {
-    crearGrafico(datos.slice(15,20));
-  })
-  .catch((err) => {
-    console.log(err);
-})
+
