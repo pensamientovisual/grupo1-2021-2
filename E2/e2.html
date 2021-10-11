@@ -12,18 +12,12 @@
     
     
     <body>
-<<<<<<< HEAD
         <h1> a la media vola </h1>
         <div id="d3-contenedor1"></div>
         
         
         <div>
             
-=======
-        <div>
-            <div class="contenedor"></div>
-            <script src="./e2.js"></script> 
->>>>>>> 03fba3ce7946fb0b5caed9156042211975f3662e
         </div>
 
         <div>
@@ -37,22 +31,21 @@
                         <div class="icono">
                             <div class="i1" id="escondido1">
                                 <p class="i1"><a title="Telefonía"  rel="import"><img class="foto1" src="icono 5-01.png" width="350"/></a> </p>
+                                <button id="boton1" class="boton-rating" onclick="newcontent1()" >Telefonía</button>
                             </div>
                             <div class="i2">
-                                <p class="i2"><a  title="Internet" href="https://www.youtube.com/watch?v=rsTLyukvxGU"><img class="foto1" src="icono 5-03.png" width="350"></a> </p>
+                                <p class="i2"><a  title="Internet" ><img class="foto1" src="icono 5-03.png" width="350"></a> </p>
+                                <button id="boton2" class="boton-rating" onclick="newcontent2()" >Internet</button>
                             </div>
                         </div>
                         <div class="i3">
-                            <p class="i3"><a  title="Cambios en el comercio" href="https://www.youtube.com/watch?v=sFbt7Icd9RI"><img class="foto1" src="icono 5-02.png" width="350"/></a></p>
+                            <p class="i3"><a  title="Cambios en el comercio" ><img class="foto1" src="icono 5-02.png" width="350"/></a></p>
+                            <button id="boton3" class="boton-rating" onclick="newcontent3()" >Cambios en el comercio</button>
                         </div>
 
                         <button id="back">Volver atrás</button>;
                 </h2>
-                <div id="contenedor-botones">
-                    <button id="boton1" class="boton-rating" onclick="newcontent1()" >Telefonía</button>
-                    <button id="boton2" class="boton-rating" onclick="newcontent2()" >Internet</button>
-                    <button id="boton3" class="boton-rating" onclick="newcontent3()" >Cambios en el comercio</button>
-                </div>
+               
                   <!-- Poner aquí los gráficos de cada página   -->
                 <h2 id="head2">
                     <div class="flex-container" id="cuerpo">
@@ -73,9 +66,7 @@
         <script type = "text/javascript">  
             function newcontent1() {
                 const element = document.getElementById("head2");
-                element.innerHTML = ""
-                
-                
+                element.innerHTML = "";
             }
             function newcontent2() {
               const element = document.getElementById("head2");
@@ -87,7 +78,7 @@
             }
             function newcontent4() {
               const element = document.getElementById("head2");
-              element.innerHTML = ""
+              element.innerHTML = "";
             }
             
                
