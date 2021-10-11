@@ -688,7 +688,6 @@ const data_amazon =[
   }
  ]
 
-consts data_amazon2= src="./AMAZON.json"
 
 console.log(data_amazon2);
 const width = 1000;
@@ -707,7 +706,7 @@ const svg = d3.select("#d3-contenedor1")
   .attr('viewBox',[0,0,width,height]);
 
 const x1 = d3.scaleBand()
-  .domain(d3.range(.lenght))
+  .domain(d3.range(data_amazon.lenght))
   .range([margin.left,width-margin.right])
   .padding(0.1);
 
@@ -724,10 +723,10 @@ svg.append('g')
    .attr('fill','royalblue')
    .selectAll('rect')
    .join('rect')
-    .attr('x',x1(d."ano_quatrimistre"))
-    //.attr('x',(d,i) =>x1(i))
-    .attr('y',y1(d."ventas_billion_Us_dollars"))
-    //.attr('height',d => y1(0)-y1(d.ventas_ billion_Us_dollars))
+    .attr('x',d."ano_quatrimistre")
+    .attr('x',(d,i) =>x1(i))
+    .attr('y',d."ventas_billion_Us_dollars")
+    .attr('height',d => y1(0)-y1(d.ventas_ billion_Us_dollars))
     .attr('width',x.bandwidth())
 
 
