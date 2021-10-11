@@ -1,5 +1,5 @@
-ano;ventas_ billion_Us_dollars
-2004;6.92
+ano_quatrimistre;ventas_ billion_Us_dollars
+2004-1;6.92
 2005;8.49
 2006;10.71
 2007;14.84
@@ -16,3 +16,4 @@ ano;ventas_ billion_Us_dollars
 2018;232.89
 2019;280.52
 2020;386.06
+2021;
