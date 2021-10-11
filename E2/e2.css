@@ -25,6 +25,7 @@ color: rgb(239, 216, 88); */
   background-color: #fcfbe5;
   text-align: center;
 }
+
 div.icono {
   display: flex;
   flex-direction: row;
