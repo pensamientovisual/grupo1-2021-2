@@ -434,3 +434,107 @@ const margin = {
   right: 30
 };
 
+// Seleccionamos nuestro contenedor y agregamos el svg. 
+// También agregamos un grupo g, donde se encontrará el gráfico. 
+// Debemos trasladar este grupo considerando los ejes que tendrá.
+const svg = d3.select(".contenedor").append("svg");
+
+svg.attr("width", WIDTH)
+   .attr("height", HEIGHT);
+
+const contenedorGrafico = svg.append("g")
+                             .attr("width", WIDTH - margin.left - margin.right)
+                             .attr("height", HEIGHT - margin.top - margin.bottom)
+                             .attr("transform", `translate(${margin.left} ${margin.top})`);
+
+// Dado que usamos un archivo CSV, necesitamos una función de parseo de datos
+const parseo = (d) => ({
+  nombre: d["Name"],
+  grasas: parseInt(d["Fat (g)"]),
+  carbohidratos: parseInt(d["Carb. (g)"]),
+  fibra: parseInt(d["Fiber (g)"]),
+  proteinas: parseInt(d["Protein "])
+})
+
+// Hacemos una función para crear la visualización
+function crearGrafico(datos) {
+  // Para definir las escalas, es fundamental contar con el máximo de los datos.
+  const maxDatos = d3.max([
+    d3.max(datos, (d) => d.grasas),
+    d3.max(datos, (d) => d.carbohidratos),
+  ]);
+  
+  // Recordamos que necesitamos escalas para:
+  //     - La altura de cada barra
+  //     - El eje Y (está invertido)
+  //     - El eje X (aquí irán los nombres de cada comida)
+
+  const escalaAltura = d3.scaleLinear()
+                    .domain([0, maxDatos])
+                    .range([0, HEIGHT - margin.top - margin.bottom]);
+                    
+  
+  const escalaY = d3.scaleLinear()
+                    .domain([maxDatos, 0])
+                    .range([0, HEIGHT - margin.top - margin.bottom]);
+                    
+  const escalaX = d3.scaleBand()
+                    .domain(datos.map((d) => d.nombre))
+                    .range([0, WIDTH - margin.left - margin.right])
+                    .padding(0.2);            
+  
+  // Una vez definidas las escalas, debemos agregar los ejes al svg
+
+  const ejeY = d3.axisLeft(escalaY); // ejeY(g)
+
+  svg
+    .append("g")
+    .attr("transform", `translate(${margin.left}, ${margin.top})`) // retorna g
+    .call(ejeY)
+    .selectAll("line")
+    .attr("x1", WIDTH - margin.right - margin.left)
+    .attr("stroke-dasharray", "5")
+    .attr("opacity", 0.5);
+
+  const ejeX = d3.axisBottom(escalaX);
+
+  svg
+    .append("g")
+    .attr("transform", `translate(${margin.left}, ${HEIGHT - margin.bottom})`)
+    .call(ejeX)
+    .selectAll("text")
+    .attr("font-size", 10);
+
+
+  // Ahora nos queda... ¡Data Join!
+  const update = contenedorGrafico.selectAll("g").data(datos);
+
+  // En este caso, no tenemos marcas para nuestros datos, por lo que nos interesa
+  // la selección enter().
+
+  const enter = update.enter();
+  
+  // Agregamos las barras a cada dato. Es conveniente agruparlas usando g,
+  // para así tener un grupo de elementos asignados a cada dato (en lugar de varios elementos sueltos).
+  const seleccionGlifo = enter.append("g");
+  const nutrients = ["grasas", "carbohidratos", "fibra", "proteinas"];
+  const colors = ["#F896D8", "#F7D488", "#68C3D4", "#404E7C"];
+
+  for(let i = 0; i < 4; i++){
+    seleccionGlifo.append("rect")
+            .attr("width", escalaX.bandwidth()/4) // bandwith se usa para una sola barra, por lo que si usamos 4 lo dividimos
+            .attr("height", (d) => escalaAltura(d[nutrients[i]]))
+            .attr("x", (d) => escalaX(d.nombre)+escalaX.bandwidth()/4*i)
+            .attr("y", (d) => escalaY(d[nutrients[i]]))
+            .attr("fill", colors[i]); 
+  }
+
+}
+// Cargamos el archivo CSV
+d3.csv("./data/starbucks-menu-nutrition-food.csv", parseo)
+  .then( (datos) => {
+    crearGrafico(datos.slice(15,20));
+  })
+  .catch((err) => {
+    console.log(err);
+})
