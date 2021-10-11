@@ -15,6 +15,7 @@ body {
   border-style: solid;
   background-color: whitesmoke;
 }
+
 div.icono {
   display: flex;
   flex-direction: row;
