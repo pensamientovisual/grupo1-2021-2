@@ -12,19 +12,22 @@
     
     
     <body>
+<<<<<<< HEAD
         <h1> a la media vola </h1>
         <div id="d3-contenedor1"></div>
         
         
         <div>
             
+=======
+        <div>
+            <div class="contenedor"></div>
+            <script src="./e2.js"></script> 
+>>>>>>> 03fba3ce7946fb0b5caed9156042211975f3662e
         </div>
 
         <div>
             <div>
-                <h2> ACAA SEÑORAS Y SEÑOREASDS </h2>
-
-
                 <h2 id="Página Princiapal">
                     <body class="todo">
                         <div class="todo1">
@@ -32,8 +35,8 @@
                             <h2 class="tit">¿Qué pasó durante la pandemia del COVID-19?</h2>
                         </div>
                         <div class="icono">
-                            <div class="i1">
-                                <p class="i1"><a title="Telefonía" link href="extern.html" rel="import"><img class="foto1" src="icono 5-01.png" width="350"/></a> </p>
+                            <div class="i1" id="escondido1">
+                                <p class="i1"><a title="Telefonía"  rel="import"><img class="foto1" src="icono 5-01.png" width="350"/></a> </p>
                             </div>
                             <div class="i2">
                                 <p class="i2"><a  title="Internet" href="https://www.youtube.com/watch?v=rsTLyukvxGU"><img class="foto1" src="icono 5-03.png" width="350"></a> </p>
@@ -46,19 +49,18 @@
                         <button id="back">Volver atrás</button>;
                 </h2>
                 <div id="contenedor-botones">
-                    <button id="boton1" class="boton-rating" onclick="newcontent1(),foto11()">Telefonía</button>
+                    <button id="boton1" class="boton-rating" onclick="newcontent1()" >Telefonía</button>
                     <button id="boton2" class="boton-rating" onclick="newcontent2()" >Internet</button>
                     <button id="boton3" class="boton-rating" onclick="newcontent3()" >Cambios en el comercio</button>
                 </div>
-                    
+                  <!-- Poner aquí los gráficos de cada página   -->
                 <h2 id="head2">
                     <div class="flex-container" id="cuerpo">
                       <div class="title">
                           <p>Parte 1</p>
                         <img id="foto1" src="img/grafico1.png"> 
                         <img id="foto2" src="img/grafico2.png"> 
-                        <img id="foto3" src="img/grafico3.png"> 
-                        <img id="foto4" src="img/grafico4.png">  
+                        <img id="foto3" src="img/grafico3.png">  
                   </div>
               
                 </h2>
@@ -72,6 +74,7 @@
             function newcontent1() {
                 const element = document.getElementById("head2");
                 element.innerHTML = ""
+                
                 
             }
             function newcontent2() {
@@ -92,7 +95,6 @@
         <script src="./e2.js"></script>
     </body>
 </html>
-
 
 
 
