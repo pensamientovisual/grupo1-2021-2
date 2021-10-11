@@ -449,19 +449,17 @@ const contenedorGrafico = svg.append("g")
 
 // Dado que usamos un archivo CSV, necesitamos una función de parseo de datos
 const parseo = (d) => ({
-  nombre: d["Name"],
-  grasas: parseInt(d["Fat (g)"]),
-  carbohidratos: parseInt(d["Carb. (g)"]),
-  fibra: parseInt(d["Fiber (g)"]),
-  proteinas: parseInt(d["Protein "])
+  nombre: d["ano"],
+  grasas: parseInt(d["ventas_ billion_Us_dollars"]),
+  
 })
 
 // Hacemos una función para crear la visualización
 function crearGrafico(datos) {
   // Para definir las escalas, es fundamental contar con el máximo de los datos.
   const maxDatos = d3.max([
-    d3.max(datos, (d) => d.grasas),
-    d3.max(datos, (d) => d.carbohidratos),
+    d3.max(datos, (d) => d.ano),
+    d3.max(datos, (d) => d.ventas_ billion_Us_dollars),
   ]);
   
   // Recordamos que necesitamos escalas para:
@@ -517,21 +515,21 @@ function crearGrafico(datos) {
   // Agregamos las barras a cada dato. Es conveniente agruparlas usando g,
   // para así tener un grupo de elementos asignados a cada dato (en lugar de varios elementos sueltos).
   const seleccionGlifo = enter.append("g");
-  const nutrients = ["grasas", "carbohidratos", "fibra", "proteinas"];
-  const colors = ["#F896D8", "#F7D488", "#68C3D4", "#404E7C"];
+  const año = ["ano"];
+  const colors = ["#F896D8"];
 
-  for(let i = 0; i < 4; i++){
-    seleccionGlifo.append("rect")
-            .attr("width", escalaX.bandwidth()/4) // bandwith se usa para una sola barra, por lo que si usamos 4 lo dividimos
-            .attr("height", (d) => escalaAltura(d[nutrients[i]]))
-            .attr("x", (d) => escalaX(d.nombre)+escalaX.bandwidth()/4*i)
-            .attr("y", (d) => escalaY(d[nutrients[i]]))
-            .attr("fill", colors[i]); 
-  }
+  
+  seleccionGlifo.append("rect")
+          .attr("width", escalaX.bandwidth()/4) // bandwith se usa para una sola barra, por lo que si usamos 4 lo dividimos
+          .attr("height", (d) => escalaAltura(d[ano[i]]))
+          .attr("x", (d) => escalaX(d.nombre)+escalaX.bandwidth()/4*i)
+          .attr("y", (d) => escalaY(d[ano[i]]))
+          .attr("fill", colors[i]); 
+  
 
 }
 // Cargamos el archivo CSV
-d3.csv("./data/starbucks-menu-nutrition-food.csv", parseo)
+d3.csv("./amazon.csv", parseo)
   .then( (datos) => {
     crearGrafico(datos.slice(15,20));
   })
