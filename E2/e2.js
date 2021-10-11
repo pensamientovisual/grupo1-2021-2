@@ -423,10 +423,12 @@ const datos_telefonia = [
       "Penetración Total por cada 100 habitantes": "111,2"
     }
    ]
+const data =[
+  
+]
 
-
-const WIDTH = 1000;
-const HEIGHT = 400;
+const width = 800;
+const height = 400;
 const margin = {
   top: 70,
   bottom: 70,
@@ -434,102 +436,20 @@ const margin = {
   right: 30
 };
 
-// Seleccionamos nuestro contenedor y agregamos el svg. 
-// También agregamos un grupo g, donde se encontrará el gráfico. 
-// Debemos trasladar este grupo considerando los ejes que tendrá.
-const svg = d3.select(".contenedor").append("svg");
+const svg = d3.select("#d3-contenedor1")
+  .append('svg')
+  .attr('height', height-margin.top-margin.bottom)
+  .attr('width', width-margin.ledt-margin.right)
+  .attr('viewBox',[0,0,width,height]);
 
-svg.attr("width", WIDTH)
-   .attr("height", HEIGHT);
-
-const contenedorGrafico = svg.append("g")
-                             .attr("width", WIDTH - margin.left - margin.right)
-                             .attr("height", HEIGHT - margin.top - margin.bottom)
-                             .attr("transform", `translate(${margin.left} ${margin.top})`);
-
-// Dado que usamos un archivo CSV, necesitamos una función de parseo de datos
-const parseo = (d) => ({
-  nombre: d["ano"],
-  grasas: parseInt(d["ventas_ billion_Us_dollars"]),
-  
-})
-
-// Hacemos una función para crear la visualización
-function crearGrafico(datos) {
-  // Para definir las escalas, es fundamental contar con el máximo de los datos.
-  const maxDatos = d3.max([
-    d3.max(datos, (d) => d.ano),
-    d3.max(datos, (d) => d.ventas_ billion_Us_dollars),
-  ]);
-  
-  // Recordamos que necesitamos escalas para:
-  //     - La altura de cada barra
-  //     - El eje Y (está invertido)
-  //     - El eje X (aquí irán los nombres de cada comida)
-
-  const escalaAltura = d3.scaleLinear()
-                    .domain([0, maxDatos])
-                    .range([0, HEIGHT - margin.top - margin.bottom]);
-                    
-  
-  const escalaY = d3.scaleLinear()
-                    .domain([maxDatos, 0])
-                    .range([0, HEIGHT - margin.top - margin.bottom]);
-                    
-  const escalaX = d3.scaleBand()
-                    .domain(datos.map((d) => d.nombre))
-                    .range([0, WIDTH - margin.left - margin.right])
-                    .padding(0.2);            
-  
-  // Una vez definidas las escalas, debemos agregar los ejes al svg
-
-  const ejeY = d3.axisLeft(escalaY); // ejeY(g)
-
-  svg
-    .append("g")
-    .attr("transform", `translate(${margin.left}, ${margin.top})`) // retorna g
-    .call(ejeY)
-    .selectAll("line")
-    .attr("x1", WIDTH - margin.right - margin.left)
-    .attr("stroke-dasharray", "5")
-    .attr("opacity", 0.5);
-
-  const ejeX = d3.axisBottom(escalaX);
-
-  svg
-    .append("g")
-    .attr("transform", `translate(${margin.left}, ${HEIGHT - margin.bottom})`)
-    .call(ejeX)
-    .selectAll("text")
-    .attr("font-size", 10);
+const x1 = d3.selectBand()
+  .domain(d3.range(data.lenght))
 
 
-  // Ahora nos queda... ¡Data Join!
-  const update = contenedorGrafico.selectAll("g").data(datos);
 
-  // En este caso, no tenemos marcas para nuestros datos, por lo que nos interesa
-  // la selección enter().
 
-  const enter = update.enter();
-  
-  // Agregamos las barras a cada dato. Es conveniente agruparlas usando g,
-  // para así tener un grupo de elementos asignados a cada dato (en lugar de varios elementos sueltos).
-  const seleccionGlifo = enter.append("g");
-  const año = ["ano"];
-  const colors = ["#F896D8"];
-
-  
-  seleccionGlifo.append("rect")
-          .attr("width", escalaX.bandwidth()/4) // bandwith se usa para una sola barra, por lo que si usamos 4 lo dividimos
-          .attr("height", (d) => escalaAltura(d[ano[i]]))
-          .attr("x", (d) => escalaX(d.nombre)+escalaX.bandwidth()/4*i)
-          .attr("y", (d) => escalaY(d[ano[i]]))
-          .attr("fill", colors[i]); 
-  
-
-}
 // Cargamos el archivo CSV
-d3.csv("./amazon.csv", parseo)
+d3.csv("./amazon.csv")
   .then( (datos) => {
     crearGrafico(datos.slice(15,20));
   })
