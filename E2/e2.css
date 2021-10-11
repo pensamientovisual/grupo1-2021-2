@@ -5,15 +5,25 @@ body {
   font-family: Raleway, Helvetica, sans-serif;
   flex-flow: column;
   align-items: center;
-  background-image: linear-gradient(#23cdf8, white);
-  background-color: #da1d91;
+  background-color: #fcfbf8;
+  color: #28364a;
+
 }
+
+.tit{
+  text-align: center;
+}
+/* color: rgb(238, 74, 61);
+color: rgb(72, 155, 173);
+color: rgb(225, 143, 71);
+color: rgb(239, 216, 88); */
 
 .d3-contenedor1 {
   border-radius: 4%;
   border-color: rgb(51, 51, 51);
   border-style: solid;
-  background-color: whitesmoke;
+  background-color: #fcfbe5;
+  text-align: center;
 }
 div.icono {
   display: flex;
@@ -29,26 +39,26 @@ div.i3 {
 }
 div.i1 {
   padding: 30px;
-  background-color: rgb(50, 213, 224);
+  background-color:#ece8e5;
   margin: auto;
 }
 div.i2 {
   padding: 30px;
-  background-color: rgb(50, 213, 224);
+  background-color:#ece8e5;
   margin: auto;
 }
 div.i3 {
   padding: 30px;
-  background-color: rgb(50, 213, 224);
+  background-color: #ece8e5;
   margin: auto;
 }
 div.i1:hover {
-  background-color: rgb(46, 46, 109);
+  background-color: #b2d3e1;
 }
 div.i2:hover {
-  background-color: rgb(46, 46, 109);
+  background-color:#d65353;
 }
 div.i3:hover {
-  background-color: rgb(46, 46, 109);
+  background-color: #f7c45f;
   text-align: center;
 }
