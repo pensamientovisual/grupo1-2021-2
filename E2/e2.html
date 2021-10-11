@@ -43,18 +43,53 @@
                             <p class="i3"><a  title="Cambios en el comercio" href="https://www.youtube.com/watch?v=sFbt7Icd9RI"><img class="foto1" src="icono 5-02.png" width="350"/></a></p>
                         </div>
 
-                        <button id="back">Volver atrás</button>
+                        <button id="back">Volver atrás</button>;
+                </h2>
+                <div id="contenedor-botones">
+                    <button id="boton1" class="boton-rating" onclick="newcontent1(),foto11()">Telefonía</button>
+                    <button id="boton2" class="boton-rating" onclick="newcontent2()" >Internet</button>
+                    <button id="boton3" class="boton-rating" onclick="newcontent3()" >Cambios en el comercio</button>
+                </div>
+                    
+                <h2 id="head2">
+                    <div class="flex-container" id="cuerpo">
+                      <div class="title">
+                          <p>Parte 1</p>
+                        <img id="foto1" src="img/grafico1.png"> 
+                        <img id="foto2" src="img/grafico2.png"> 
+                        <img id="foto3" src="img/grafico3.png"> 
+                        <img id="foto4" src="img/grafico4.png">  
+                  </div>
+              
                 </h2>
             
             </div>
         </div>
         
-
-
-
-
         <div class="contenedor"></div>
         <script src="./e2.js"></script> 
+
+        <script type = "text/javascript">  
+            function newcontent1() {
+                const element = document.getElementById("head2");
+                element.innerHTML = ""
+                
+            }
+            function newcontent2() {
+              const element = document.getElementById("head2");
+              element.innerHTML = "";
+            }
+            function newcontent3() {
+              const element = document.getElementById("head2");
+              element.innerHTML = "";
+            }
+            function newcontent4() {
+              const element = document.getElementById("head2");
+              element.innerHTML = ""
+            }
+            
+               
+            </script>  
     </body>
 </html>
 
