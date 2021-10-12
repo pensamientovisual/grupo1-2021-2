@@ -1,4 +1,4 @@
-
+  
  const svg = document.getElementById("main-svg-container");
  
  const WIDTH = 1000,

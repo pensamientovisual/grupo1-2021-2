@@ -97,3 +97,18 @@ div.i3:hover {
   background-color: #fdd584;
   text-align: center;
 }
+div.titulotelefonia {
+  border-radius: 20px;
+  background-color:#ece8e5;
+  margin: auto;
+}
+div.titulointernet {
+  border-radius: 20px;
+  background-color:#ece8e5;
+  margin-left: auto;
+}
+div.titulocomercio {
+  border-radius: 20px;
+  background-color:#ece8e5;
+  margin-left: auto;
+}
