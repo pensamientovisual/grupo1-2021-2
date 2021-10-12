@@ -23,8 +23,4 @@ function volver_atras() {
     document.getElementById("paginaprincipal").style.visibility = "visible"
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> b250b4189b62f79bcfdd5a4ccf105d926ab2296a
 
