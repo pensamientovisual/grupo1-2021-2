@@ -1,114 +1,119 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>E2</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
-        <script src="https://d3js.org/d3.v6.js"></script>
-        <link rel="stylesheet" href="./e2.css">
-        <script type="text/javascript" src="extras.js"></script>
-        <script type="text/javascript" src="e2.js"></script>
-        <link rel="stylesheet" href="styles.css">
-        <script src="https://unpkg.com/d3@5.6.0/dist/d3.min.js"></script>
-    </head>
-    
-    
-    <body>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>E2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <script src="https://d3js.org/d3.v6.js"></script>
+    <link rel="stylesheet" href="./e2.css">
+    <script type="text/javascript" src="extras.js"></script>
+    <script type="text/javascript" src="e2.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/d3@5.6.0/dist/d3.min.js"></script>
+</head>
+
+
+<body>
         
-        
-        <div>
+    <div>
+        <!-- PAGINA PRINCIPAL -->
+        <div id="paginaprincipal">
+            <h2 id="Página 1">
+                <body class="todo">
+                    <div class="todo1">
+                        <h2 class="tit">Conectividad y telecomunicaciones</h2>
+                        <h2 class="tit">¿Qué pasó durante la pandemia del COVID-19?</h2>
+                    </div>
+                    <div class="icono">
+                        <div class="i1" id="escondido1">
+                            <p class="i1"><a title="Telefonía"  rel="import"><img class="foto1" src="icono 5-01.png" width="350"/></a> </p>
+                            <button id="boton1" class="boton-rating" onclick="boton1()" >Telefonía</button>
+                        </div>
+                        <div class="i2">
+                            <p class="i2"><a  title="Internet" ><img class="foto1" src="icono 5-03.png" width="350"></a> </p>
+                            <button id="boton2" class="boton-rating" onclick="boton2()">Internet</button>
+                        </div>
+                    </div>
+                    <div class="i3">
+                        <p class="i3"><a  title="Cambios en el comercio" ><img class="foto1" src="icono 5-02.png" width="350"/></a></p>
+                        <button id="boton3" class="boton-rating" onclick="boton3()">Comercio</button>
+                    </div>
+        </div>
+        <button id="back" onclick="volver_atras()">Página principal</button>;
+    </div>
+        <!-- PAGINA TELEFONIA -->
+        <div id="paginatelefonia">
+            <h2 id="Página 2">
+                <body>
+                    <div class="titulotelefonia">
+                        <h2 class="tat">Conectividad y telecomunicaciones</h2>
+                        <h2 class="tat">¿Qué pasó durante la pandemia del COVID-19?</h2>
+                    </div>
+                </body>
+            </h2>
+        </div>
+        <!-- PAGINA INTERNET -->
+        <div id="paginainternet">
+            <h2 id="Página 3">
+                <body>
+                    <div class="titulointernet">
+                        <h2 class="tat">Conectividad y telecomunicaciones</h2>
+                        <h2 class="tat">¿Qué pasó durante la pandemia del COVID-19?</h2>
+                    </div>
+                </body>
+            </h2>
+        </div>
+        <div id = "graf1">
+            aaaaaaaaaaaaaaa
             
+            <svg width="1000" height="650"></svg>
+            <script src="bar_chart_1/bundle.js"></script>
         </div>
-
-        <div>
-            <!-- PAGINA PRINCIPAL -->
-            <div id="paginaprincipal">
-                <h2 id="Página 1">
-                    <body class="todo">
-                        <div class="todo1">
-                            <h2 class="tit">Conectividad y telecomunicaciones</h2>
-                            <h2 class="tit">¿Qué pasó durante la pandemia del COVID-19?</h2>
-                        </div>
-                        <div class="icono">
-                            <div class="i1" id="escondido1">
-                                <p class="i1"><a title="Telefonía"  rel="import"><img class="foto1" src="icono 5-01.png" width="350"/></a> </p>
-                                <button id="boton1" class="boton-rating" onclick="boton1()" >Telefonía</button>
-                            </div>
-                            <div class="i2">
-                                <p class="i2"><a  title="Internet" ><img class="foto1" src="icono 5-03.png" width="350"></a> </p>
-                                <button id="boton2" class="boton-rating" onclick="boton2()">Internet</button>
-                            </div>
-                        </div>
-                        <div class="i3">
-                            <p class="i3"><a  title="Cambios en el comercio" ><img class="foto1" src="icono 5-02.png" width="350"/></a></p>
-                            <button id="boton3" class="boton-rating" onclick="boton3()">Comercio</button>
-                        </div>
-            </div>
-            <button id="back" onclick="volver_atras()">Página principal</button>;
+        
+        
+        <div id="paginacomercio">
+            <p>hola</p>
+            <h2 id="Página 4">
+                <body>
+                    <div class="titulocomercio">
+                        <h2 class="tat">Conectividad y telecomunicaciones</h2>
+                        <h2 class="tat">¿Qué pasó durante la pandemia del COVID-19?</h2>
+                    </div>
+                </body>
+            </h2>
         </div>
-            <!-- PAGINA TELEFONIA -->
-            <div id="paginatelefonia">
-                <h2 id="Página 2">
-                    <body>
-                        <div class="titulotelefonia">
-                            <h2 class="tat">Conectividad y telecomunicaciones</h2>
-                            <h2 class="tat">¿Qué pasó durante la pandemia del COVID-19?</h2>
-                        </div>
-                    </body>
-                </h2>
-
-            </div>
-            <!-- PAGINA INTERNET -->
-            <div id="paginainternet">
-                <h2 id="Página 3">
-                    <body>
-                        <div class="titulointernet">
-                            <h2 class="tat">Conectividad y telecomunicaciones</h2>
-                            <h2 class="tat">¿Qué pasó durante la pandemia del COVID-19?</h2>
-                        </div>
-                    </body>
-                </h2>
-
-            </div>
-
-            <div id = "graf1">
-                aaaaaaaaaaaaaaa
-                
-                <svg width="1000" height="650"></svg>
-                <script src="bar_chart_1/bundle.js"></script>
-
-            </div>
-
+     
+        
+           
+        </script>  
+    
+        <div class="content">
+        
             <div class="svg-container">
                 <svg class="container" id="main-svg-container">
     
                 </svg>
             </div>
-            
-            <div id="paginacomercio">
-                <p>hola</p>
-                <h2 id="Página 4">
-                    <body>
-                        <div class="titulocomercio">
-                            <h2 class="tat">Conectividad y telecomunicaciones</h2>
-                            <h2 class="tat">¿Qué pasó durante la pandemia del COVID-19?</h2>
-                        </div>
-                    </body>
-                </h2>
-
             </div>
-         
-            
-
-
-               
-            </script>  
+    
+    
         
-
+    
+    </div>
+    
+    
+        <h2>Cantidad de conexiones móviles</h2>
+        <canvas id="grafica"></canvas>
+        
+    
+        
+    
+    
+    <script src="./e2.js" type="module"></script>
+    
     </body>
-</html>
 
 
 
