@@ -97,7 +97,7 @@ div.i2:hover {
 }
 div.i3:hover {
   background-color: #fdd584;
-  text-align: center;
+  text-align: auto;
 }
 div.titulotelefonia {
   transform: scale(1.2);
