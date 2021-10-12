@@ -1,3 +1,4 @@
+
 // BOTON A PAGINA TELEFONIA
 function boton1() {
     document.getElementById("paginatelefonia").style.visibility = "visible"
@@ -27,5 +28,5 @@ function volver_atras() {
     document.getElementById("paginatelefonia").style.visibility = "collapse"
     document.getElementById("paginainternet").style.visibility = "collapse"
     document.getElementById("paginacomercio").style.visibility = "collapse"
-
+}
 
