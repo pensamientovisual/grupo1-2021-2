@@ -40,17 +40,15 @@ div.icono {
   padding: 70px;
 }
 
-div.tele{
+div.tele {
   display: flex;
   flex-direction: row;
 }
 
-
-div.net{
+div.net {
   display: flex;
   flex-direction: row;
 }
-
 
 div.i3 {
   display: flex;
@@ -60,14 +58,14 @@ div.i3 {
   text-align: center;
 }
 
-.i1{ margin: auto;
-
+.i1 {
+  margin: auto;
 }
-.i2{ margin: auto;
-
+.i2 {
+  margin: auto;
 }
-.i3{ margin: auto;
-
+.i3 {
+  margin: auto;
 }
 div.i1 {
   border-radius: 20px;
@@ -83,21 +81,28 @@ div.i2 {
   margin: auto;
   height: 300px;
   width: 500px;
+  transform: ;
 }
 div.i3 {
   padding: 30px;
   background-color: #ece8e5;
   margin: auto;
   flex-direction: column;
-  height: 400px;
-  width: 400px;
-
+  height: 300px;
+  width: 500px;
 }
+
+div.tele {
+  transform: scale(0.8);
+}
+
 div.i1:hover {
   background-color: #9fc8da;
+  margin: auto;
 }
 div.i2:hover {
   background-color: #db6e6e;
+  margin: auto;
 }
 div.i3:hover {
   background-color: #fdd584;
