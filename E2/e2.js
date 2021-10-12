@@ -1,8 +1,8 @@
 const svg = document.getElementById("main-svg-container");
  
-const WIDTH = 500,;
+const WIDTH = 1500
       
-const HEIGHT = 500;
+const HEIGHT = 800
  
  
  svg.setAttribute("width",WIDTH);
