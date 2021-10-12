@@ -100,17 +100,24 @@ div.i3:hover {
   text-align: center;
 }
 div.titulotelefonia {
+  transform: scale(1.2);
   border-radius: 20px;
   background-color: #9fc8da;
   margin: auto;
 }
 div.titulointernet {
+  transform: scale(1.2);
   border-radius: 20px;
   background-color: #db6e6e;
   margin: auto;
 }
 div.titulocomercio {
+  transform: scale(1.2);
   border-radius: 20px;
   background-color: #fdd584;
   margin: auto;
+}
+
+div.tat {
+  font-size: small;
 }
