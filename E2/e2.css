@@ -110,7 +110,6 @@ div.titulotelefonia {
 }
 div.titulointernet {
   border-radius: 20px;
-<<<<<<< HEAD
   background-color: #ece8e5;
   margin: auto;
 }
@@ -119,13 +118,3 @@ div.titulocomercio {
   background-color: #ece8e5;
   margin: auto;
 }
-=======
-  background-color:#ece8e5;
-  margin-left: auto;
-}
-div.titulocomercio {
-  border-radius: 20px;
-  background-color:#ece8e5;
-  margin-left: auto;
-}
->>>>>>> a280a9ee174b014e6a86895124d5f6380e423cc6
