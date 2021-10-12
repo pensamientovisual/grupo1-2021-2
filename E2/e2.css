@@ -25,26 +25,30 @@ color: rgb(239, 216, 88); */
   background-color: #fcfbe5;
   text-align: center;
 }
-
 div.icono {
   display: flex;
   flex-direction: row;
   align-items: CE;
   text-align: center;
+  margin: auto;
+  padding: 70px;
 }
+
 div.i3 {
   display: flex;
+  border-radius: 30px;
   flex-direction: row;
   align-items: CE;
   text-align: center;
 }
 div.i1 {
-  padding: 30px;
+  border-radius: 20px;
   background-color:#ece8e5;
   margin: auto;
+  margin-right: 50px;
 }
 div.i2 {
-  padding: 30px;
+  border-radius: 20px;
   background-color:#ece8e5;
   margin: auto;
 }
@@ -54,12 +58,12 @@ div.i3 {
   margin: auto;
 }
 div.i1:hover {
-  background-color: #b2d3e1;
+  background-color: #9fc8da;
 }
 div.i2:hover {
-  background-color:#d65353;
+  background-color:#db6e6e;
 }
 div.i3:hover {
-  background-color: #f7c45f;
+  background-color: #fdd584;
   text-align: center;
 }
