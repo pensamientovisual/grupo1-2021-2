@@ -483,13 +483,13 @@ const aDataRange = {
     max: 0
 };
 
-
+"ventas_ billion_Us_dollars"
 // w es el el grupo de cada dato, mes año y total de conexiones
 for (const w of datos){
     // Rellenar
     console.log(w);
     
-    const xValue=w.Mes[xVariable],
+    const xValue=w.ano[xVariable],
           aValue=w.ano[aVariable],
           yValue=w.Total_Conexiones_Moviles[yVariable];
     
@@ -506,23 +506,15 @@ console.log(lista1);
 const lista2=[]
 
 for (let y of datos){
-  lista2.push(parseInt(y.Total_Conexiones_Moviles));
+  lista2.push(y.Total_Conexiones_Moviles);
 };
 
 console.log(lista2);
-
-
-
-
-
-
 
 // Obtener una referencia al elemento canvas del DOM
 const $grafica = document.querySelector("#grafica");
 // Las etiquetas son las que van en el eje X. 
 const etiquetas = lista1;
-
-
 
 
 // Podemos tener varios conjuntos de datos. Comencemos con uno
