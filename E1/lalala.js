@@ -1,17 +1,12 @@
 
-
- //const author = "Grupo bonito";
- //document.getElementById("autor").innerHTML= author;
-
-
  const svg = document.getElementById("main-svg-container");
  
- const WIDTH = 100,
-       HEIGHT = 100;
+ const WIDTH = 1000,
+       HEIGHT = 1000;
  
  
- svg.setAttribute("width",WIDTH)
- svg.setAttribute("height",HEIGHT)
+ svg.setAttribute("width",WIDTH);
+ svg.setAttribute("height",HEIGHT);
  
  const margins = {top:10, bottom:20, left:40,right:20};
  
@@ -483,7 +478,6 @@ const aDataRange = {
     max: 0
 };
 
-"ventas_ billion_Us_dollars"
 // w es el el grupo de cada dato, mes año y total de conexiones
 for (const w of datos){
     // Rellenar
