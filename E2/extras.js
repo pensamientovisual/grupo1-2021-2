@@ -28,10 +28,4 @@ function volver_atras() {
     document.getElementById("paginainternet").style.visibility = "collapse"
     document.getElementById("paginacomercio").style.visibility = "collapse"
 
-<<<<<<< HEAD
-=======
-    
-}
-
->>>>>>> f8d0f818dc46aa58f9121c87433dc1dd9726bd0f
 
