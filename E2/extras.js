@@ -23,5 +23,4 @@ function volver_atras() {
     document.getElementById("paginaprincipal").style.visibility = "visible"
 }
 
-<3
 
