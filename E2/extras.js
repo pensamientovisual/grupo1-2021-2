@@ -26,13 +26,4 @@ function volver_atras() {
     document.getElementById("paginaprincipal").style.visibility = "visible"
     document.getElementById("paginatelefonia").style.visibility = "collapse"
     document.getElementById("paginainternet").style.visibility = "collapse"
-<<<<<<< HEAD
     document.getElementById("paginacomercio").style.visibility = "collapse"
-=======
-    document.getElementById("paginacomercio").style.visibility = "collapse"
-
-    
-}
-
-
->>>>>>> 41d0c4fae899702f19d76dd72f54988c2f191c65
