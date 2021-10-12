@@ -8,19 +8,15 @@ body {
   background-color: #fcfbf8;
   color: #28364a;
 }
-.body2 {
-  display: flex;
-  height: 100%;
-  font-family: Raleway, Helvetica, sans-serif;
-  flex-flow: column;
-  background-color: #fcfbf8;
-  color: #28364a;
-  margin-left: initial;
-  align-items: left;
 
+div.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.tit{
+.tit {
   text-align: center;
 }
 /* color: rgb(238, 74, 61);
@@ -44,34 +40,64 @@ div.icono {
   padding: 70px;
 }
 
+div.tele{
+  display: flex;
+  flex-direction: row;
+}
+
+
+div.net{
+  display: flex;
+  flex-direction: row;
+}
+
+
 div.i3 {
   display: flex;
   border-radius: 30px;
   flex-direction: row;
-  align-items: CE;
+  /* align-items: CE; */
   text-align: center;
+}
+
+.i1{ margin: auto;
+
+}
+.i2{ margin: auto;
+
+}
+.i3{ margin: auto;
+
 }
 div.i1 {
   border-radius: 20px;
-  background-color:#ece8e5;
+  background-color: #ece8e5;
   margin: auto;
   margin-right: 50px;
+  height: 300px;
+  width: 500px;
 }
 div.i2 {
   border-radius: 20px;
-  background-color:#ece8e5;
+  background-color: #ece8e5;
   margin: auto;
+  height: 300px;
+  width: 500px;
 }
 div.i3 {
   padding: 30px;
   background-color: #ece8e5;
   margin: auto;
+  flex-direction: column;
+  height: 400px;
+  width: 400px;
+
 }
 div.i1:hover {
   background-color: #9fc8da;
 }
 div.i2:hover {
-  background-color:#db6e6e;
+  background-color: #db6e6e;
 }
 div.i3:hover {
   background-color: #fdd584;
@@ -79,16 +105,16 @@ div.i3:hover {
 }
 div.titulotelefonia {
   border-radius: 20px;
-  background-color:#ece8e5;
+  background-color: #ece8e5;
   margin: auto;
 }
 div.titulointernet {
   border-radius: 20px;
-  background-color:#ece8e5;
-  margin-left: auto;
+  background-color: #ece8e5;
+  margin: auto;
 }
 div.titulocomercio {
   border-radius: 20px;
-  background-color:#ece8e5;
-  margin-left: auto;
+  background-color: #ece8e5;
+  margin: auto;
 }
