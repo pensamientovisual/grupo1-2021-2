@@ -40,28 +40,58 @@ div.icono {
   padding: 70px;
 }
 
+div.tele{
+  display: flex;
+  flex-direction: row;
+}
+
+
+div.net{
+  display: flex;
+  flex-direction: row;
+}
+
+
 div.i3 {
   display: flex;
   border-radius: 30px;
   flex-direction: row;
-  align-items: CE;
+  /* align-items: CE; */
   text-align: center;
+}
+
+.i1{ margin: auto;
+
+}
+.i2{ margin: auto;
+
+}
+.i3{ margin: auto;
+
 }
 div.i1 {
   border-radius: 20px;
   background-color: #ece8e5;
   margin: auto;
   margin-right: 50px;
+  height: 300px;
+  width: 500px;
 }
 div.i2 {
   border-radius: 20px;
   background-color: #ece8e5;
   margin: auto;
+  height: 300px;
+  width: 500px;
 }
 div.i3 {
   padding: 30px;
   background-color: #ece8e5;
   margin: auto;
+  flex-direction: column;
+  height: 400px;
+  width: 400px;
+
 }
 div.i1:hover {
   background-color: #9fc8da;
@@ -80,6 +110,7 @@ div.titulotelefonia {
 }
 div.titulointernet {
   border-radius: 20px;
+<<<<<<< HEAD
   background-color: #ece8e5;
   margin: auto;
 }
@@ -88,3 +119,13 @@ div.titulocomercio {
   background-color: #ece8e5;
   margin: auto;
 }
+=======
+  background-color:#ece8e5;
+  margin-left: auto;
+}
+div.titulocomercio {
+  border-radius: 20px;
+  background-color:#ece8e5;
+  margin-left: auto;
+}
+>>>>>>> a280a9ee174b014e6a86895124d5f6380e423cc6
