@@ -1,4 +1,4 @@
-  
+
  const svg = document.getElementById("main-svg-container");
  
  const WIDTH = 1000,
@@ -455,13 +455,9 @@ const datos = [
   }
  ]
 
-
-
 const xVariable = "mes",
       aVariable = "año",
       yVariable = "Total de Conexiones";
-
-
 
 const xDataRange = {
     min: 0,
