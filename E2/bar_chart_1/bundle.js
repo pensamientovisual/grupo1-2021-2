@@ -1,7 +1,7 @@
 (function (d3) {
   'use strict';
 
-  const titleText = 'Top 10 Most Populous Countries';
+  const titleText = 'Ventas amazon';
   const xAxisLabelText = 'ventas';
 
   const svg = d3.select('svg');
@@ -23,7 +23,7 @@
     const yScale = d3.scaleBand()
       .domain(data.map(yValue))
       .range([0, innerHeight])
-      .padding(0.1);
+      .padding(0.2);
     
     const g = svg.append('g')
       .attr('transform', `translate(${margin.left},${margin.top})`);
