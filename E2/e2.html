@@ -8,6 +8,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
         <script src="https://d3js.org/d3.v6.js"></script>
         <link rel="stylesheet" href="./e2.css">
+        <script type="text/javascript" src="extras.js"></script>
+        <script type="text/javascript" src="e2.js"></script>
     </head>
     
     
@@ -29,20 +31,19 @@
                         <div class="icono">
                             <div class="i1" id="escondido1">
                                 <p class="i1"><a title="Telefonía"  rel="import"><img class="foto1" src="icono 5-01.png" width="350"/></a> </p>
-                                <button id="boton1" class="boton-rating" >Telefonía</button>
+                                <button id="boton1" class="boton-rating" onclick="boton1()" >Telefonía</button>
                             </div>
                             <div class="i2">
                                 <p class="i2"><a  title="Internet" ><img class="foto1" src="icono 5-03.png" width="350"></a> </p>
-                                <button id="boton2" class="boton-rating" onclick="newcontent2()" >Internet</button>
+                                <button id="boton2" class="boton-rating" onclick="boton2()">Internet</button>
                             </div>
                         </div>
                         <div class="i3">
                             <p class="i3"><a  title="Cambios en el comercio" ><img class="foto1" src="icono 5-02.png" width="350"/></a></p>
-                            <button id="boton3" class="boton-rating" onclick="newcontent3()" >Cambios en el comercio</button>
+                            <button id="boton3" class="boton-rating" >Cambios en el comercio</button>
                         </div>
-
-                        <button id="back">Volver atrás</button>;
             </div>
+            <button id="back" onclick="volver_atras()">Volver atrás</button>;
         </div>
         
          

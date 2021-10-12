@@ -1,12 +1,27 @@
 
 $(document).ready(function(){
     $("#back").click(function(){
-
-    });
-    $("#boton1").click(function(){
-        console.log("hola")
-        document.getElementById("paginaprincipal").style.visibility="collapse"
-    });
-    
-
+    });   
 });
+
+
+function boton1() {
+    document.getElementById("paginaprincipal").style.visibility = "collapse"
+    document.getElementById("div telefonia").style.visibility = "visible"
+}
+
+function boton2() {
+    document.getElementById("paginaprincipal").style.visibility = "collapse"
+}
+
+
+function volver_atras() {
+    document.getElementById("paginaprincipal").style.visibility = "collapse"
+    document.getElementById("paginaprincipal").style.visibility = "collapse"
+    document.getElementById("paginaprincipal").style.visibility = "collapse"
+
+    document.getElementById("paginaprincipal").style.visibility = "visible"
+}
+
+<3
+
