@@ -1,39 +1,37 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>E2</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
-    <script src="https://d3js.org/d3.v6.js"></script>
-    <link rel="stylesheet" href="./e2.css">
-    <script type="text/javascript" src="extras.js"></script>
-    <script type="text/javascript" src="e2.js"></script>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://unpkg.com/d3@5.6.0/dist/d3.min.js"></script>
-</head>
-
-
-<body>
-        
-    <div>
-        <!-- PAGINA PRINCIPAL -->
-        <div id="paginaprincipal">
-            <h2 id="Página 1">
-                <body class="todo">
-                    <div class="todo1">
-                        <h2 class="tit">Conectividad y telecomunicaciones</h2>
-                        <h2 class="tit">¿Qué pasó durante la pandemia del COVID-19?</h2>
-                    </div>
-                    <div class="icono">
-                        <div class="i1" id="escondido1">
-                            <p class="i1"><a title="Telefonía"  rel="import"><img class="foto1" src="icono 5-01.png" width="350"/></a> </p>
-                            <button id="boton1" class="boton-rating" onclick="boton1()" >Telefonía</button>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>E2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+        <script src="https://d3js.org/d3.v6.js"></script>
+        <link rel="stylesheet" href="./e2.css">
+        <script type="text/javascript" src="extras.js"></script>
+        <script type="text/javascript" src="e2.js"></script>
+    </head>
+    
+    
+    <body>
+        <div>
+            <!-- PAGINA PRINCIPAL -->
+            <div id="paginaprincipal">
+                <h2 id="Página 1">
+                    <body class="todo">
+                        <div class="todo1">
+                            <h2 class="tit">Conectividad y telecomunicaciones</h2>
+                            <h2 class="tit">¿Qué pasó durante la pandemia del COVID-19?</h2>
                         </div>
-                        <div class="i2">
-                            <p class="i2"><a  title="Internet" ><img class="foto1" src="icono 5-03.png" width="350"></a> </p>
-                            <button id="boton2" class="boton-rating" onclick="boton2()">Internet</button>
+                        <div class="icono">
+                            <div class="i1" id="escondido1">
+                                <p class="i1"><a title="Telefonía"  rel="import"><img class="foto1" src="icono 5-01.png" width="350"/></a> </p>
+                                <button id="boton1" class="boton-rating" onclick="boton1()" >Telefonía</button>
+                            </div>
+                            <div class="i2">
+                                <p class="i2"><a  title="Internet" ><img class="foto1" src="icono 5-03.png" width="350"></a> </p>
+                                <button id="boton2" class="boton-rating" onclick="boton2()">Internet</button>
+                            </div>
                         </div>
                     </div>
                     <div class="i3">
@@ -86,10 +84,20 @@
     
         <div class="content">
         
-            <div class="svg-container">
-                <svg class="container" id="main-svg-container">
-    
-                </svg>
+            <button id="back" onclick="volver_atras()">Página principal</button>;
+            
+            <!-- PAGINA TELEFONIA -->
+            <div id="paginatelefonia">
+                <h2 id="Página 2">
+                    <body>
+                        <div class="titulotelefonia">
+                            <h4 class="tat">Conectividad y telecomunicaciones</h4>
+                            <h4 class="tat">¿Qué pasó durante la pandemia del COVID-19?</h4>
+                        </div>
+                        <h2 class="tet">Telefonía</h2>
+                    
+                </h2>
+
             </div>
         </div>
     
