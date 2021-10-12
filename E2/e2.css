@@ -7,6 +7,16 @@ body {
   align-items: center;
   background-color: #fcfbf8;
   color: #28364a;
+}
+.body2 {
+  display: flex;
+  height: 100%;
+  font-family: Raleway, Helvetica, sans-serif;
+  flex-flow: column;
+  background-color: #fcfbf8;
+  color: #28364a;
+  margin-left: initial;
+  align-items: left;
 
 }
 
