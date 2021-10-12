@@ -10,10 +10,6 @@ body {
 }
 
 div.main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
 }
 
 .tit {
@@ -41,8 +37,8 @@ div.icono {
   margin-left: 400px;
 }
 
-.iF{margin-right: 150px;
-
+.iF {
+  margin-right: 150px;
 }
 
 div.tele {
