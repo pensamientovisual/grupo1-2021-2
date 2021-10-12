@@ -50,14 +50,11 @@ div.net {
   display: flex;
   flex-direction: row;
 }
-
-div.i3 {
+div.amazon {
   display: flex;
-  border-radius: 30px;
   flex-direction: row;
-  /* align-items: CE; */
-  text-align: center;
 }
+
 
 div.i1 {
   border-radius: 20px;
@@ -75,12 +72,13 @@ div.i2 {
   width: 500px;
 }
 div.i3 {
-  padding: 30px;
+  border-radius: 30px;
   background-color: #ece8e5;
   margin: auto;
   flex-direction: column;
   height: 300px;
   width: 500px;
+  text-align: center;
 }
 
 div.tele {
@@ -90,6 +88,7 @@ div.tele {
 div.i1:hover {
   background-color: #9fc8da;
   margin: auto;
+  margin-right: 50px;
 }
 div.i2:hover {
   background-color: #db6e6e;
