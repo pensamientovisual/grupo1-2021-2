@@ -30,7 +30,19 @@ div.icono {
   align-items: CE;
   text-align: center;
   margin: auto;
-  padding: 70px;
+  padding: 20px;
+}
+
+.flechas {
+  display: flex;
+  flex-direction: row;
+  /* align-items: CE; */
+  text-align: center;
+  margin-left: 400px;
+}
+
+.iF{margin-right: 150px;
+
 }
 
 div.tele {
