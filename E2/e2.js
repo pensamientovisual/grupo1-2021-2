@@ -1,18 +1,18 @@
 const svg = document.getElementById("main-svg-container");
  
-const WIDTH = 1500
+const WIDTH = 1500;
       
-const HEIGHT = 800
+const HEIGHT = 800;
  
- 
- svg.setAttribute("width",WIDTH);
- svg.setAttribute("height",HEIGHT);
- 
- const margins = {top:10, bottom:20, left:40,right:20};
- 
- 
- 
- const width = WIDTH-margins.left-margins.right,
+
+svg.setAttribute("width",WIDTH);
+svg.setAttribute("height",HEIGHT);
+
+const margins = {top:10, bottom:20, left:40,right:20};
+
+
+
+const width = WIDTH-margins.left-margins.right,
        height = HEIGHT-margins.top-margins.bottom;
  
 
@@ -305,7 +305,7 @@ for (let y of data_amazon){
   lista1.push(y.ano_quatrimistre);
 };
 
-console.log(lista1);
+// console.log(lista1);
 
 const lista2=[]
 
@@ -313,7 +313,7 @@ for (let w of data_amazon){
   lista2.push(w.ventas)
 };
   
-console.log(lista2);
+// console.log(lista2);
 
 // Obtener una referencia al elemento canvas del DOM
 const $grafica = document.querySelector("#grafica");

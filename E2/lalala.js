@@ -455,15 +455,7 @@ const aDataRange = {
 };
 
 // w es el el grupo de cada dato, mes año y total de conexiones
-for (const w of datos){
-    // Rellenar
-    console.log(w);
-    
-    const xValue=w.ano[xVariable],
-          aValue=w.ano[aVariable],
-          yValue=w.Total_Conexiones_Moviles[yVariable];
-    
-    };
+
 
 const lista1=[]
 
@@ -471,7 +463,7 @@ for (let y of datos){
   lista1.push([y.Mes,y.ano]);
 };
 
-console.log(lista1);
+// console.log(lista1);
 
 const lista2=[]
 
@@ -479,7 +471,7 @@ for (let y of datos){
   lista2.push(y.Total_Conexiones_Moviles);
 };
 
-console.log(lista2);
+// console.log(lista2);
 
 // Obtener una referencia al elemento canvas del DOM
 const $grafica2 = document.querySelector("#grafica2");
