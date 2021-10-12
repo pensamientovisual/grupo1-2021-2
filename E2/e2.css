@@ -53,8 +53,11 @@ div.net {
 div.amazon {
   display: flex;
   flex-direction: row;
+  transform: scale(0.8)
 }
-
+div.amazon1{
+  margin: 20px;
+}
 
 div.i1 {
   border-radius: 20px;
