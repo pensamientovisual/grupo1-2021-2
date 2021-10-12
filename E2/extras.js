@@ -1,9 +1,11 @@
+
 $(document).ready(function(){
     $("#back").click(function(){
 
     });
     $("#boton1").click(function(){
-        $("grafico1").toggle()
+        console.log("hola")
+        document.getElementById("paginaprincipal").style.visibility="collapse"
     });
     
 
