@@ -1,3 +1,4 @@
+
 // BOTON A PAGINA TELEFONIA
 function boton1() {
     document.getElementById("paginatelefonia").style.display = "initial"
@@ -28,3 +29,4 @@ function volver_atras() {
     document.getElementById("paginainternet").style.display = "none"
     document.getElementById("paginacomercio").style.display = "none"
 }
+
