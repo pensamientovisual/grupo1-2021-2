@@ -123,3 +123,15 @@ div.titulocomercio {
 div.tat {
   font-size: small;
 }
+
+div.ptelefonia{
+  display: none;
+}
+
+div.pinternet{
+  display: none;
+}
+
+div.pcomercio{
+  display: none;
+}
