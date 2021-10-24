@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="e2.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
+    <title>D3n't</title>
+</head>
+
+
+<body>
+ <!-- PAGINA PRINCIPAL -->
+<div class="main">
+    <div class="content">
+        <div id="paginaprincipal">
+            <h2 id="Página 1">
+                <div class="todo1">
+                    <h2 class="tit">Conectividad y telecomunicaciones</h2>
+                    <h2 class="tit">¿Qué pasó durante la pandemia del COVID-19?</h2>
+                </div>
+        </div>
+
+        <div class="i1">
+            <div class="internet">
+                      
+                <div>
+                    <p class="i1">Internet móvil<a rel="import">  <!-- AGREGAR GRÁFICO RESUMEN --> <img class="foto1" src="icono 5-01.png" width="180"/></a> </p>
+                </div>
+            </div>
+            <button id="boton1" class="boton-rating" onclick="boton1()" >CLICK</button>
+        </div>
+
+        <div class="i2">
+            <div class="comercio">
+                      
+                <div>
+                    <p class="i2">E-Commerce Amazon<a rel="import">  <!-- AGREGAR GRÁFICO RESUMEN --> <img class="foto1" src="icono 5-01.png" width="180"/></a> </p>
+                </div>
+            </div>
+            <button id="boton2" class="boton-rating" onclick="boton2()" >CLICK</button>
+        </div>
+
+        <div class="i3">
+            <div class="telefonia">
+                      
+                <div>
+                    <p class="i3">Telefonía<a rel="import">  <!-- AGREGAR GRÁFICO RESUMEN --> <img class="foto1" src="icono 5-01.png" width="180"/></a> </p>
+                </div>
+            </div>
+            <button id="boton3" class="boton-rating" onclick="boton3()" >CLICK</button>
+        </div>
+
+        <div class="svg-container">
+            <svg class="container" id="main-svg-container">
+
+            </svg>
+        </div>
+    </div>
+
+
+    
+
+</div>
+
+
+<h2>Cantidad de conexiones móviles</h2>
+<canvas id="grafica"></canvas>
+    
+
+    
+
+
+<script src="./e2.js" type="module"></script>
+
+</body>
+
+
+</html>

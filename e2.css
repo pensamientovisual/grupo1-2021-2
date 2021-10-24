@@ -11,7 +11,8 @@ body {
   color: #28364a;
 }
 
-div.main {
+div.content{
+  
 }
 
 .tit {
@@ -61,7 +62,7 @@ div.amazon1{
   margin: 20px;
 }
 
-div.i1 {
+div.i3 {
   border-radius: 20px;
   background-color: #ece8e5;
   margin: auto;
@@ -69,14 +70,14 @@ div.i1 {
   height: 300px;
   width: 500px;
 }
-div.i2 {
+div.i1 {
   border-radius: 20px;
   background-color: #ece8e5;
   margin: auto;
   height: 300px;
   width: 500px;
 }
-div.i3 {
+div.i2 {
   border-radius: 30px;
   background-color: #ece8e5;
   margin: auto;
@@ -90,16 +91,16 @@ div.tele {
   transform: scale(0.8);
 }
 
-div.i1:hover {
+div.i3:hover {
   background-color: #9fc8da;
   margin: auto;
   margin-right: 50px;
 }
-div.i2:hover {
+div.i1:hover {
   background-color: #db6e6e;
   margin: auto;
 }
-div.i3:hover {
+div.i2:hover {
   background-color: #fdd584;
   text-align: auto;
 }
