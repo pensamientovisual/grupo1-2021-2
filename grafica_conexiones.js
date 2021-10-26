@@ -38,27 +38,16 @@ for (let y of datos){
  
  
  
-const amazon=[]
- 
-for (let y of datos){
-   amazon.push((y.amazon_billones_de_dolares));
- };
- 
- 
-const llamaditas=[]
- 
-for (let y of datos){
-   llamaditas.push(y.llamadas);
- };
+
  
 console.log(llamaditas);
  
  
-const svg = document.getElementById("main-svg-container");
+const svg = document.getElementById("main-svg-container2");
   
-const WIDTH = 800;
+const WIDTH = 500;
        
-const HEIGHT = 500;
+const HEIGHT = 250;
  
 svg.setAttribute("width",WIDTH);
 svg.setAttribute("height",HEIGHT);
@@ -68,13 +57,8 @@ const margins = {top:10, bottom:20, left:40,right:20};
 const width = WIDTH-margins.left-margins.right,
        height = HEIGHT-margins.top-margins.bottom;
   
-const $grafica = document.querySelector("#grafica");
-const $graficaconexiones = document.querySelector("#graficaconexiones");
-const $graficaamazon = document.querySelector("#graficaamazon");
-const $graficatelefonia = document.querySelector("#graficatelefonia");
 
-
-
+const $grafica2 = document.querySelector("#grafica2");
 
  // Las etiquetas son las que van en el eje X. 
 const etiqueta = años;
@@ -88,50 +72,7 @@ const datos1 = {
    
  };
  
-const datos2 = {
-  label: "amazon ventas por millon",
-  data: amazon, // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
-  backgroundColor: 'rgba(54, 62, 235, 0.2)', // Color de fondo
-  borderColor: 'rgba(54, 162, 235, 1)', // Color del borde
-  borderWidth: 3,// Ancho del borde
-  
-};
  
-const datos3 = {
-  label: "Llamadas",
-  data: llamaditas, // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
-  backgroundColor: 'rgba(54, 162, 22, 0.2)', // Color de fondo
-  borderColor: 'rgba(54, 162, 235, 1)', // Color del borde
-  borderWidth: 3,// Ancho del borde
-  
-};
- 
-new Chart($grafica, {
-  type: 'bar',// Tipo de gráfica
-  data: {
-      labels: etiqueta,
-      datasets: [datos1,datos2,datos3]
-  },
-  options: {
-      legend: {
-          labels: {
-            // This more specific font property overrides the global property
-              fontColor: 'red'
-          }
-      },
-
-
-      scales: {
-          yAxes: [{
-              ticks: {
-                  beginAtZero: true
-              }
-          }],
-      },
-  }
-});
- 
-
 new Chart($graficaconexiones, {
    type: 'bar',// Tipo de gráfica
    data: {
@@ -156,54 +97,3 @@ new Chart($graficaconexiones, {
        },
    }
  });
-
- new Chart($graficaamazon, {
-  type: 'bar',// Tipo de gráfica
-  data: {
-      labels: etiqueta,
-      datasets: [datos2]
-  },
-  options: {
-      legend: {
-          labels: {
-            // This more specific font property overrides the global property
-              fontColor: 'red'
-          }
-      },
-
-
-      scales: {
-          yAxes: [{
-              ticks: {
-                  beginAtZero: true
-              }
-          }],
-      },
-  }
-});
-
-
-new Chart($graficatelefonia, {
-  type: 'bar',// Tipo de gráfica
-  data: {
-      labels: etiqueta,
-      datasets: [datos3]
-  },
-  options: {
-      legend: {
-          labels: {
-            // This more specific font property overrides the global property
-              fontColor: 'red'
-          }
-      },
-
-
-      scales: {
-          yAxes: [{
-              ticks: {
-                  beginAtZero: true
-              }
-          }],
-      },
-  }
-});
