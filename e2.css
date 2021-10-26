@@ -94,7 +94,8 @@ div.internet{
 
  
 div.comercio{
-  position: center;
+  position: absolute;
+  left:1000px;
   border-radius: 30px;
   background-color: #ece8e5;
   margin: auto;
