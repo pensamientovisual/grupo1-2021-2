@@ -169,3 +169,7 @@ div.pcomercio{
   display: none;
 }
 
+div.grafico{
+  align-items: column;
+
+}

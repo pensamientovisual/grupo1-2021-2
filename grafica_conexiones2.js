@@ -40,7 +40,7 @@ for (let y of datos){
  
 
  
-console.log(llamaditas);
+
  
  
 const svg = document.getElementById("main-svg-container2");
