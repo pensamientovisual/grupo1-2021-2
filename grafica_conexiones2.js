@@ -73,11 +73,11 @@ const datos1 = {
  };
  
  
-new Chart($graficaconexiones, {
+new Chart($grafica2, {
    type: 'bar',// Tipo de gráfica
    data: {
        labels: etiqueta,
-       datasets: [datos1,datos2,datos3]
+       datasets: [datos1]
    },
    options: {
        legend: {
