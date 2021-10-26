@@ -41,9 +41,9 @@ for (let y of datos){
  
 const svg = document.getElementById("main-svg-container3");
   
-const WIDTH = 800;
+const WIDTH = 500;
        
-const HEIGHT = 500;
+const HEIGHT = 250;
  
 svg.setAttribute("width",WIDTH);
 svg.setAttribute("height",HEIGHT);
