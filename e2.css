@@ -62,22 +62,26 @@ div.amazon1{
   margin: 20px;
 }
 
-div.i3 {
-  border-radius: 20px;
-  background-color: #ece8e5;
-  margin: auto;
-  margin-right: 50px;
-  height: 300px;
-  width: 500px;
-}
-div.i1 {
+div.internet{
+  position: absolute;
+  left: 200px;
   border-radius: 20px;
   background-color: #ece8e5;
   margin: auto;
   height: 300px;
   width: 500px;
+  text-align: center;
+  
 }
-div.i2 {
+div.internet:hover {
+  background-color: #db6e6e;
+  margin: auto;
+}
+
+ 
+div.comercio{
+  position: center;
+  left: 600px;
   border-radius: 30px;
   background-color: #ece8e5;
   margin: auto;
@@ -87,23 +91,36 @@ div.i2 {
   text-align: center;
 }
 
-div.tele {
-  transform: scale(0.8);
+div.comercio:hover {
+  background-color: #fdd584;
+  text-align: auto;
 }
 
-div.i3:hover {
+div.telefonia{
+  position: absolute;
+  right: 200px;
+  border-radius: 20px;
+  background-color: #ece8e5;
+  margin: auto;
+  margin-right: 50px;
+  height: 300px;
+  width: 500px;
+  text-align: center;
+}
+
+div.telefonia:hover {
   background-color: #9fc8da;
   margin: auto;
   margin-right: 50px;
 }
-div.i1:hover {
-  background-color: #db6e6e;
-  margin: auto;
+
+div.tele {
+  transform: scale(0.8);
 }
-div.i2:hover {
-  background-color: #fdd584;
-  text-align: auto;
-}
+
+
+
+
 div.titulotelefonia {
   transform: scale(1.2);
   border-radius: 20px;
@@ -138,3 +155,4 @@ div.pinternet{
 div.pcomercio{
   display: none;
 }
+
