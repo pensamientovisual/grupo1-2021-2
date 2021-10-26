@@ -1,8 +1,8 @@
 const svg = document.getElementById("main-svg-container3");
  
-const WIDTH = 1500
+const WIDTH = 800
       
-const HEIGHT = 800
+const HEIGHT = 500
 
 svg.setAttribute("width",WIDTH);
 svg.setAttribute("height",HEIGHT);
@@ -142,6 +142,8 @@ const datosjeje3 = {
     borderWidth: 3,// Ancho del borde
     
 };
+
+
 
 
 new Chart($grafica3, {
