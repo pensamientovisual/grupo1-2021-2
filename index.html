@@ -9,6 +9,7 @@
         <script src="https://d3js.org/d3.v6.js"></script>
         <link rel="stylesheet" href="./e2.css">
         <script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
+        <script type="text/javascript" src="extras.js"></script>
         <title>index</title>
         
         
@@ -18,41 +19,96 @@
 
 
 <body>
+    <!-- PAGINA PRINCIPAL -->
+    <div class="main">
+        <div class="content">
+            <div id="paginaprincipal">
+                <h2 id="Página 1">
+                    <div class="todo1">
+                        <h2 class="tit">Conectividad y telecomunicaciones</h2>
+                        <h2 class="tit">¿Qué pasó durante la pandemia del COVID-19?</h2>
+                        <div class="text">
+                            <h4> Desde el año 2020, el mundo se ha visto afectado por la llegada de la pandemia del COVID-19. Es por ello que se analiza cómo esto afectó el área de las telecomunicaciones, específicamente cuántas personas cuentan con internet móvil y la cantidad de llamadas por número telefónico. Además, se visualiza el efecto de esta evolución tecnológica en el área del E-commerce mediante las ventas de Amazon, la empresa más grande en el rubro. </h4>
+                        </div> 
+                    </div>
 
-<div class="main">
-    <div class="content">
-        
-        <div class="svg-container">
-            <svg class="container" id="main-svg-container-amazon">
+            </div>
+                    
 
-            </svg>
+            </div>
+            <div class="flex-container">
+                <div class="i1">
+                
+                    <div class="internet">
+                            
+                        <div>
+                            <button id="boton1" class="boton-rating" onclick="boton1()" >Internet móvil</button>
+                            <p class="i1"><a rel="import">  <!-- AGREGAR GRÁFICO RESUMEN --> <img class="foto1" src="icono 5-01.png" width="180"/></a> </p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="i2">
+                    <div class="comercio">
+                            
+                        <div>
+                            <button id="boton2" class="boton-rating" onclick="boton2()" >E-Commerce Amazon</button>
+                            <p class="i2"><a rel="import">  <!-- AGREGAR GRÁFICO RESUMEN --> <img class="foto1" src="icono 5-01.png" width="180"/></a> </p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="i3">
+                    <div class="telefonia">
+                            
+                        <div>
+                            <button id="boton3" class="boton-rating" onclick="boton3()" >Telefonía</button>
+                            <p class="i3"><a rel="import">  <!-- AGREGAR GRÁFICO RESUMEN --> <img class="foto1" src="icono 5-01.png" width="180"/></a> </p>
+                        </div>
+                    </div>
+                
+            </div>
+
         </div>
+    
+    <!-- GRÁFICOS -->
+
+    <div class="main">
+        <div class="content">
+            
+            <div class="svg-container">
+                <svg class="container" id="main-svg-container-amazon">
+
+                </svg>
+            </div>
 
 
-        <div class="main">  
-            <div class="svg-container3">
-                <svg class="container3" id="main-svg-container3"></svg>
-                <canvas id="grafica3"></canvas>
+            <div class="main">  
+                <div class="svg-container3">
+                    <svg class="container3" id="main-svg-container3"></svg>
+                    <canvas id="grafica3"></canvas>
+                </div>
             </div>
         </div>
+
+
+        
+
     </div>
 
 
-    
+    <h2>Cantidad de conexiones móviles</h2>
+    <canvas id="grafica3"></canvas>
+        
 
-</div>
-
-
-<h2>Cantidad de conexiones móviles</h2>
-<canvas id="grafica3"></canvas>
-    
-
-    
+        
 
 
 
-<script src="./datos_finales.js" type="module"></script>
-<script src="./grafica_amazon.js" type="module"></script>
+    <script src="./datos_finales.js" type="module"></script>
+    <script src="./grafica_amazon.js" type="module"></script>
 
 </body>
 
