@@ -92,7 +92,7 @@ div.b-comercio{
 
 div.b-internet{
   position: absolute right;
-  left: 200px;
+
   margin: auto;
   text-align: center;
   
@@ -105,7 +105,7 @@ div.b-internet{
 
 div.b-telefonia{
   position: absolute left;
-  right: 200px;
+  
   margin: auto;
   text-align: center;
 }
@@ -128,18 +128,21 @@ div.titulotelefonia {
   border-radius: 20px;
   background-color: #9fc8da;
   margin: auto;
+  text-align: center;
 }
 div.titulointernet {
   transform: scale(1.2);
   border-radius: 20px;
   background-color: #db6e6e;
   margin: auto;
+  text-align: center;
 }
 div.titulocomercio {
   transform: scale(1.2);
   border-radius: 20px;
   background-color: #fdd584;
   margin: auto;
+  text-align: center;
 }
 
 div.tat {
@@ -168,4 +171,14 @@ div.botoncines{
 }
 div.boton-volver{
   position: absolute;
+}
+
+div.subtelefonia{
+  text-align: center;
+}
+div.subcomercio{
+  text-align: center;
+}
+div.subinternet{
+  text-align: center;
 }
