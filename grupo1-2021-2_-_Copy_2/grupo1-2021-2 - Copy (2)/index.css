@@ -12,9 +12,16 @@ body{
   width: 90%;
   margin: auto;
 }
-div.content{
-  
+.pag{
+  display: flex;
+  flex-direction: row;
 }
+
+.graf{
+  display: flex;
+  flex-direction: row;
+}
+
 .tit {
   text-align: center;
   
@@ -42,13 +49,6 @@ div.icono {
   padding: 20px;
 }
 
-.flechas {
-  display: flex;
-  flex-direction: row;
-  /* align-items: CE; */
-  text-align: center;
-  margin-left: 400px;
-}
 
 .iF {
   margin-right: 150px;
