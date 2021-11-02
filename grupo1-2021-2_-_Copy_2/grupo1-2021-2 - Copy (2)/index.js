@@ -195,10 +195,8 @@ const g3 = new Chart(
     config3
   );
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 8ed3f30deb65f675cd657cc59acae2445ad0daa5
+
+
 function triggerHover(chart, index) {
   if (index > 2019) {
     chart.setActiveElements([]);
@@ -212,11 +210,7 @@ function triggerHover(chart, index) {
   }
   chart.update();
 }
-<<<<<<< HEAD
-=======
->>>>>>> c1fb1d424e5e996b822f62734657afe3b7ad576c
-=======
->>>>>>> 8ed3f30deb65f675cd657cc59acae2445ad0daa5
+
 
 function triggerHover(chart, index) {
     if (chart.getActiveElements().length > 0) {
