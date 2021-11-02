@@ -483,8 +483,8 @@ const etiquetas2 = lista1;
 const datosjeje = {
     label: "Total Conexiones Moviles",
     data: lista2, // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
-    backgroundColor: 'rgba(54, 162, 235, 0.2)', // Color de fondo
-    borderColor: 'rgba(54, 162, 235, 1)', // Color del borde
+    backgroundColor: 'rgba(219, 110, 98, 0.3)', // Color de fondo
+    borderColor: 'rgba(219, 88, 70, 1)',
     borderWidth: 3,// Ancho del borde
     
 };
