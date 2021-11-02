@@ -75,30 +75,30 @@ const etiqueta = años;
 const datos1 = {
   label: "Llamadas",
   data: llamaditas, // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
-  backgroundColor: 'rgba(54, 162, 22, 0.2)', // Color de fondo
-  borderColor: 'rgba(54, 162, 235, 1)', // Color del borde
-  borderWidth: 3,// Ancho del borde
-  hoverBorderColor: 'green',
+  backgroundColor: 'rgba(158, 200, 215, 0.3)', // Color de fondo
+  borderColor: 'rgba(40, 164, 198, 1)', // Color del borde
+  borderWidth: 5,// Ancho del borde
+  hoverBorderColor: 'grey',
   
 };
 
 const datos2 = {
   label: "conexiones_moviles",
   data: conexiones_moviles, // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
-  backgroundColor: 'rgba(54, 162, 22, 0.2)', // Color de fondo
-  borderColor: 'rgba(54, 162, 235, 1)', // Color del borde
-  borderWidth: 3,// Ancho del borde
-  hoverBorderColor: 'green',
+  backgroundColor: 'rgba(219, 110, 98, 0.3)', // Color de fondo
+  borderColor: 'rgba(219, 88, 70, 1)', // Color del borde
+  borderWidth: 5,// Ancho del borde
+  hoverBorderColor: 'grey',
   
 };
 
 const datos3 = {
   label: "Amazon",
   data: amazon, // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
-  backgroundColor: 'rgba(54, 162, 22, 0.2)', // Color de fondo
-  borderColor: 'rgba(54, 162, 235, 1)', // Color del borde
-  borderWidth: 3,// Ancho del borde
-  hoverBorderColor: 'green',
+  backgroundColor: 'rgba(246, 213, 132, 0.3', // Color de fondo
+  borderColor: 'rgba(246, 195, 74, 1)', // Color del borde
+  borderWidth: 5,// Ancho del borde
+  hoverBorderColor: 'grey',
   
 };
  
