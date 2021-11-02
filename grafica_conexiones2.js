@@ -36,12 +36,7 @@ for (let y of datos){
    conexiones_moviles.push(y.Total_conexiones_moviles/100000);
  };
  
- 
- 
 
- 
-
- 
  
 const svg = document.getElementById("main-svg-container2");
   
