@@ -29,7 +29,7 @@ function boton3() {
 // BOTON A LA PAGINA PRINCIPAL
 function volver_atras() {
     document.getElementById("paginaprincipal").style.display = "initial"
-    document.getElementById("minibotones").style.display = "initial"
+    document.getElementById("minibotones").style.display = "inherit"
     document.getElementById("paginatelefonia").style.display = "none"
     document.getElementById("paginainternet").style.display = "none"
     document.getElementById("paginacomercio").style.display = "none"
