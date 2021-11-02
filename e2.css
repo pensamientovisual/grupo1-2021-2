@@ -1,7 +1,7 @@
 html,
 
 
-body {
+body{
   display: flex;
   height: 100%;
   font-family: Raleway, Helvetica, sans-serif;
@@ -24,6 +24,7 @@ color: rgb(225, 143, 71);
 color: rgb(239, 216, 88); */
 div.text {
   text-align: justify;
+  font-family: Raleway, Helvetica, sans-serif;
   text-justify: inter-word;
   margin-left: 100px;
   margin-right: 100px;
@@ -35,6 +36,7 @@ div.icono {
   display: flex;
   flex-direction: row;
   align-items: CE;
+  font-family: Raleway, Helvetica, sans-serif;
   text-align: center;
   margin: auto;
   padding: 20px;
