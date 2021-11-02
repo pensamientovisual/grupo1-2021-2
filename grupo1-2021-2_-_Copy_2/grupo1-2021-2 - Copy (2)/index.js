@@ -195,6 +195,8 @@ const g3 = new Chart(
     config3
   );
 
+
+
 function triggerHover(chart, index) {
   if (index > 2019) {
     chart.setActiveElements([]);
@@ -208,6 +210,7 @@ function triggerHover(chart, index) {
   }
   chart.update();
 }
+
 
 function triggerHover(chart, index) {
     if (chart.getActiveElements().length > 0) {
