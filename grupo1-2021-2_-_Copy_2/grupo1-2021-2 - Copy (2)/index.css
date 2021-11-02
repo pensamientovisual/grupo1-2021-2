@@ -74,6 +74,8 @@ div.amazon1{
 /* BOTONES */
 div.flex-container{
   display: flex;
+  margin: auto;
+  margin-right: 100px;
 }
 
 div.b-comercio{
@@ -100,9 +102,6 @@ div.b-internet{
   margin: auto;
 } */
 
- 
-
-
 
 div.b-telefonia{
   position: absolute left;
@@ -122,8 +121,6 @@ div.b-telefonia{
 div.tele {
   transform: scale(0.8);
 }
-
-
 
 
 div.titulotelefonia {
@@ -164,4 +161,8 @@ div.pcomercio{
 div.grafico{
   align-items: column;
 
+}
+
+div.botoncines{
+  text-align: center;
 }
