@@ -17,6 +17,7 @@ div.content{
 }
 .tit {
   text-align: center;
+  
 }
 /* color: rgb(238, 74, 61);
 color: rgb(72, 155, 173);
@@ -24,7 +25,6 @@ color: rgb(225, 143, 71);
 color: rgb(239, 216, 88); */
 div.text {
   text-align: justify;
-  font-family: Raleway, Helvetica, sans-serif;
   text-justify: inter-word;
   margin-left: 100px;
   margin-right: 100px;
@@ -71,31 +71,13 @@ div.amazon {
 div.amazon1{
   margin: 20px;
 }
-
+/* BOTONES */
 div.flex-container{
   display: flex;
 }
 
-div.b-internet{
-  position: absolute;
-  left: 200px;
-  border-radius: 20px;
-  background-color: #ece8e5;
-  margin: auto;
-  text-align: center;
-  
-}
-/* div.internet:hover {
-  background-color: #db6e6e;
-  margin: auto;
-} */
-
- 
 div.b-comercio{
-  position: absolute;
-  left:1000px;
-  border-radius: 30px;
-  background-color: #ece8e5;
+  position: absolute center;
   margin: auto;
   flex-direction: column;
   text-align: center;
@@ -106,13 +88,26 @@ div.b-comercio{
   text-align: auto;
 } */
 
-div.b-telefonia{
-  position: absolute;
-  right: 200px;
-  border-radius: 20px;
-  background-color: #ece8e5;
+div.b-internet{
+  position: absolute right;
+  left: 200px;
   margin: auto;
-  margin-right: 50px;
+  text-align: center;
+  
+}
+/* div.internet:hover {
+  background-color: #db6e6e;
+  margin: auto;
+} */
+
+ 
+
+
+
+div.b-telefonia{
+  position: absolute left;
+  right: 200px;
+  margin: auto;
   text-align: center;
 }
 
@@ -121,6 +116,8 @@ div.b-telefonia{
   margin: auto;
   margin-right: 50px;
 } */
+
+/* TERMINAN LOS BOTONES */
 
 div.tele {
   transform: scale(0.8);
