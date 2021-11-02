@@ -123,21 +123,21 @@ div.tele {
 }
 
 
-div.titulotelefonia {
+div.subtelefonia {
   transform: scale(1.2);
   border-radius: 20px;
   background-color: #9fc8da;
   margin: auto;
   text-align: center;
 }
-div.titulointernet {
+div.subinternet {
   transform: scale(1.2);
   border-radius: 20px;
   background-color: #db6e6e;
   margin: auto;
   text-align: center;
 }
-div.titulocomercio {
+div.subcomercio {
   transform: scale(1.2);
   border-radius: 20px;
   background-color: #fdd584;
@@ -173,12 +173,3 @@ div.boton-volver{
   position: absolute;
 }
 
-div.subtelefonia{
-  text-align: center;
-}
-div.subcomercio{
-  text-align: center;
-}
-div.subinternet{
-  text-align: center;
-}
