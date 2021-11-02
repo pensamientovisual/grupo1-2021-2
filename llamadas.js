@@ -137,8 +137,8 @@ const etiquetas3 = lista1;
 const datosjeje3 = {
     label: "Llamadas en promedio por numero movil",
     data: lista2, // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
-    backgroundColor: 'rgba(54, 162, 235, 0.2)', // Color de fondo
-    borderColor: 'rgba(54, 162, 235, 1)', // Color del borde
+    backgroundColor: 'rgba(158, 200, 215, 0.3)', // Color de fondo
+    borderColor: 'rgba(40, 164, 198, 1)', // Color del borde // Color del borde
     borderWidth: 3,// Ancho del borde
     
 };

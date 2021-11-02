@@ -325,8 +325,8 @@ const etiquetas = lista1;
 const ventastotales = {
     label: "VENTAS AMAZON",
     data: lista2, // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
-    backgroundColor: 'rgba(54, 162, 235, 0.2)', // Color de fondo
-    borderColor: 'rgba(54, 162, 235, 1)', // Color del borde
+    backgroundColor: 'rgba(246, 213, 132, 0.3', // Color de fondo
+    borderColor: 'rgba(246, 195, 74, 1)', // Color del borde  
     borderWidth: 3,// Ancho del borde
     
 };
