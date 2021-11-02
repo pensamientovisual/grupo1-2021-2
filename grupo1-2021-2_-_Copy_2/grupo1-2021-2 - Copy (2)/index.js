@@ -72,8 +72,8 @@ for (let y of datos){
  // Las etiquetas son las que van en el eje X. 
 const etiqueta = años;
 
-const datos1 = {
-  label: "Llamadas",
+const datos3 = {
+  label: "Promedio de llamadas anualales por persona",
   data: llamaditas, // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
   backgroundColor: 'rgba(158, 200, 215, 0.3)', // Color de fondo
   borderColor: 'rgba(40, 164, 198, 1)', // Color del borde
@@ -82,8 +82,8 @@ const datos1 = {
   
 };
 
-const datos2 = {
-  label: "conexiones_moviles",
+const datos1 = {
+  label: "Cantidad de conexiones móviles",
   data: conexiones_moviles, // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
   backgroundColor: 'rgba(219, 110, 98, 0.3)', // Color de fondo
   borderColor: 'rgba(219, 88, 70, 1)', // Color del borde
@@ -92,8 +92,8 @@ const datos2 = {
   
 };
 
-const datos3 = {
-  label: "Amazon",
+const datos2 = {
+  label: "Ingresos de Amazon",
   data: amazon, // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
   
   backgroundColor: 'rgba(246, 213, 132, 0.3', // Color de fondo
