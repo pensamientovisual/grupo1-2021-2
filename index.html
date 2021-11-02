@@ -1,128 +1,34 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>EFINAL</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
-        <script src="https://d3js.org/d3.v6.js"></script>
-        <link rel="stylesheet" href="./e2.css">
-        <script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
-        <script type="text/javascript" src="extras.js"></script>
-        <title>index</title>
-        
-    </head>
-
-
-<body>
-    
-    <!-- PAGINA PRINCIPAL -->
-    <div class="main">
-        <div class="content">
-            <div id="paginaprincipal">
-                <h2 id="Página 1">
-                    <div class="todo1">
-                        <h2 class="tit">Conectividad y telecomunicaciones</h2>
-                        <h2 class="tit">¿Qué pasó durante la pandemia del COVID-19?</h2>
-                        <div class="text">
-                            <h4> Desde el año 2020, el mundo se ha visto afectado por la llegada de la pandemia del COVID-19. Es por ello que se analiza cómo esto afectó el área de las telecomunicaciones, específicamente cuántas personas cuentan con internet móvil y la cantidad de llamadas por número telefónico. Además, se visualiza el efecto de esta evolución tecnológica en el área del E-commerce mediante las ventas de Amazon, la empresa más grande en el rubro. </h4>
-                        </div> 
-                    </div>
-
-            </div>
-                    
-
-            </div>
-            <div class="flex-container">
-                <div class="i1">
-                
-                    <div class="internet">
-                            
-                        <div>
-                            <button id="boton1" class="boton-rating" onclick="boton1()" >Internet móvil</button>
-                            <!-- AGRAGAR GRÁFICO RESUMEN -->
-                    </div>
-                    
-                </div>
-
-                <div class="i2">
-                    <div class="comercio">
-                            
-                        <div>
-                            <button id="boton2" class="boton-rating" onclick="boton2()" >E-Commerce Amazon</button>
-                            <!-- AGRAGAR GRÁFICO RESUMEN -->
-                        </div>
-                    </div>
-                    
-                </div>
-
-                <div class="i3">
-                    <div class="telefonia">
-                            
-                        <div>
-                            <button id="boton3" class="boton-rating" onclick="boton3()" >Telefonía</button>
-                            <!-- AGRAGAR GRÁFICO RESUMEN -->
-                        </div>
-                    </div>
-                
-            </div>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="m-10">
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        <div class="">
+            <canvas id="g1">
+            </canvas>
         </div>
-    
-    <!-- GRÁFICOS -->
-
-    <div class="main">
-        <div class="content">
-            
-            <div class="grafico">  
-                <div class="svg-container1">
-                    <svg class="container1" id="main-svg-container1"></svg>
-                    <canvas id="grafica1"></canvas>
-                </div>
-            </div>
-
-            <div class="grafico">  
-                <div class="svg-container2">
-                    <svg class="container2" id="main-svg-container2"></svg>
-                    <canvas id="grafica2"></canvas>
-                </div>
-            </div>
-
-            <div class="grafico">  
-        
-                <div class="svg-container3">
-                    <svg class="container3" id="main-svg-container3"></svg>
-                    <canvas id="grafica3"></canvas>
-                </div>
-            </div>
-
-            
-
-
-          
+        <div>
+            <canvas id="g2">
+            </canvas>
         </div>
-
+        <div>
+            <canvas id="g3">
+            </canvas>
+        </div>
+    </section>
+    <div class="flex items-center space-around justify-center mt-8">
+        <button id="2018" class="px-2 py-1 rounded-md bg-blue-500 text-white mr-3">2018</button>
+        <button id="2019" class="px-2 py-1 rounded-md bg-blue-500 text-white mr-3">2019</button>
+        <button id="2020" class="px-2 py-1 rounded-md bg-blue-500 text-white mr-3">2020</button>
+        <button id="2021" class="px-2 py-1 rounded-md bg-blue-500 text-white mr-3">2021</button>
     </div>
-
-
-  
-    
-        
-
-        
-
-
-
-
-    <script src="./grafica_llamas1.js" type="module"></script>
-    <script src="./grafica_conexiones2.js" type="module"></script>
-    <script src="./grafica_amazon3.js" type="module"></script>
-
+    <script type="text/javascript" src="./utils.js"></script>
+    <script type="text/javascript" src="./index.js"></script>
 </body>
-
 </html>
-
-
-
-
