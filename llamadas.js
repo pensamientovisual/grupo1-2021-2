@@ -14,83 +14,83 @@ const width = WIDTH-margins.left-margins.right,
  
 const datos = [
     {
-      "Mes_ano": "ene-20",
+      "Mes_ano": "Ene-20",
       "Llamadas": 46
     },
     {
-      "Mes_ano": "feb-20",
+      "Mes_ano": "Feb-20",
       "Llamadas": 43
     },
     {
-      "Mes_ano": "mar-20",
+      "Mes_ano": "Mar-20",
       "Llamadas": 45
     },
     {
-      "Mes_ano": "abr-20",
+      "Mes_ano": "Abr-20",
       "Llamadas": 36
     },
     {
-      "Mes_ano": "may-20",
+      "Mes_ano": "May-20",
       "Llamadas": 38
     },
     {
-      "Mes_ano": "jun-20",
+      "Mes_ano": "Jun-20",
       "Llamadas": 38
     },
     {
-      "Mes_ano": "jul-20",
+      "Mes_ano": "Jul-20",
       "Llamadas": 40
     },
     {
-      "Mes_ano": "ago-20",
+      "Mes_ano": "Ago-20",
       "Llamadas": 42
     },
     {
-      "Mes_ano": "sept-20",
+      "Mes_ano": "Sept-20",
       "Llamadas": 41
     },
     {
-      "Mes_ano": "oct-20",
+      "Mes_ano": "Oct-20",
       "Llamadas": 44
     },
     {
-      "Mes_ano": "nov-20",
+      "Mes_ano": "Nov-20",
       "Llamadas": 43
     },
     {
-      "Mes_ano": "dic-20",
+      "Mes_ano": "Dic-20",
       "Llamadas": 47
     },
     {
-      "Mes_ano": "ene-21",
+      "Mes_ano": "Ene-21",
       "Llamadas": 42
     },
     {
-      "Mes_ano": "feb-21",
+      "Mes_ano": "Feb-21",
       "Llamadas": 38
     },
     {
-      "Mes_ano": "mar-21",
+      "Mes_ano": "Mar-21",
       "Llamadas": 44
     },
     {
-      "Mes_ano": "abr-21",
+      "Mes_ano": "Abr-21",
       "Llamadas": 38
     },
     {
-      "Mes_ano": "may-21",
+      "Mes_ano": "May-21",
       "Llamadas": 42
     },
     {
-      "Mes_ano": "jun-21",
+      "Mes_ano": "Jun-21",
       "Llamadas": 39
     },
     {
-      "Mes_ano": "jul-21",
+      "Mes_ano": "Jul-21",
       "Llamadas": 41
     },
     {
-      "Mes_ano": "ago-21",
+      "Mes_ano": "Ago-21",
       "Llamadas": 41
     }
    ]
