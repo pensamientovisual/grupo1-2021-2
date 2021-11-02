@@ -17,6 +17,7 @@ div.content{
 }
 .tit {
   text-align: center;
+  
 }
 /* color: rgb(238, 74, 61);
 color: rgb(72, 155, 173);
@@ -24,7 +25,6 @@ color: rgb(225, 143, 71);
 color: rgb(239, 216, 88); */
 div.text {
   text-align: justify;
-  font-family: Raleway, Helvetica, sans-serif;
   text-justify: inter-word;
   margin-left: 100px;
   margin-right: 100px;
