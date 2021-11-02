@@ -69,7 +69,7 @@ const datos3 = {
   
 };
  
-new Chart($grafica1, {
+const myChart = new Chart($grafica1, {
   type: 'bar',// Tipo de gráfica
   data: {
       labels: etiqueta,
@@ -93,4 +93,7 @@ new Chart($grafica1, {
       },
   }
 });
+
+https://datavizcatalogue.com/index.html
+
  
