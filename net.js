@@ -481,7 +481,7 @@ const etiquetas2 = lista1;
 
 // Podemos tener varios conjuntos de datos. Comencemos con uno
 const datosjeje = {
-    label: "Total Conexiones Moviles",
+    label: "Total de conexiones móviles",
     data: lista2, // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
     backgroundColor: 'rgba(219, 110, 98, 0.3)', // Color de fondo
     borderColor: 'rgba(219, 88, 70, 1)',

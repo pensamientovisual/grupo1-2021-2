@@ -73,7 +73,7 @@ for (let y of datos){
 const etiqueta = años;
 
 const datos3 = {
-  label: "Promedio de llamadas anualales por número",
+  label: "Promedio de llamadas anualales por número móvil",
   data: llamaditas, // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
   backgroundColor: 'rgba(158, 200, 215, 0.3)', // Color de fondo
   borderColor: 'rgba(40, 164, 198, 1)', // Color del borde

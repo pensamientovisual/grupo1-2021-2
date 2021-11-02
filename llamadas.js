@@ -135,7 +135,7 @@ const etiquetas3 = lista1;
 
 // Podemos tener varios conjuntos de datos. Comencemos con uno
 const datosjeje3 = {
-    label: "Llamadas en promedio por numero movil",
+    label: "Llamadas en promedio por número móvil",
     data: lista2, // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
     backgroundColor: 'rgba(158, 200, 215, 0.3)', // Color de fondo
     borderColor: 'rgba(40, 164, 198, 1)', // Color del borde // Color del borde
