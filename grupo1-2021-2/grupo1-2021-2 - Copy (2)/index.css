@@ -166,3 +166,6 @@ div.grafico{
 div.botoncines{
   text-align: center;
 }
+div.boton-volver{
+  position: absolute;
+}
