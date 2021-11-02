@@ -95,6 +95,7 @@ const datos2 = {
 const datos3 = {
   label: "Amazon",
   data: amazon, // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
+  
   backgroundColor: 'rgba(246, 213, 132, 0.3', // Color de fondo
   borderColor: 'rgba(246, 195, 74, 1)', // Color del borde
   borderWidth: 5,// Ancho del borde
@@ -194,7 +195,19 @@ const g3 = new Chart(
     config3
   );
 
- 
+function triggerHover(chart, index) {
+  if (index > 2019) {
+    chart.setActiveElements([]);
+  } else {
+    chart.setActiveElements([
+      {
+        datasetIndex: 0,
+        index: index,
+      }
+    ]);
+  }
+  chart.update();
+}
 
 function triggerHover(chart, index) {
     if (chart.getActiveElements().length > 0) {
