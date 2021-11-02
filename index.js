@@ -102,26 +102,6 @@ const datos3 = {
   hoverBorderColor: 'grey',
   
 };
-
-const datos2 = {
-  label: "conexiones_moviles",
-  data: conexiones_moviles, // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
-  backgroundColor: 'rgba(54, 162, 22, 0.2)', // Color de fondo
-  borderColor: 'rgba(54, 162, 235, 1)', // Color del borde
-  borderWidth: 3,// Ancho del borde
-  hoverBorderColor: 'green',
-  
-};
-
-const datos3 = {
-  label: "Amazon",
-  data: amazon, // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
-  backgroundColor: 'rgba(54, 162, 22, 0.2)', // Color de fondo
-  borderColor: 'rgba(54, 162, 235, 1)', // Color del borde
-  borderWidth: 3,// Ancho del borde
-  hoverBorderColor: 'green',
-  
-};
  
 const config1 = {
   type: 'bar',// Tipo de gráfica
@@ -216,6 +196,9 @@ const g3 = new Chart(
   );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8ed3f30deb65f675cd657cc59acae2445ad0daa5
 function triggerHover(chart, index) {
   if (index > 2019) {
     chart.setActiveElements([]);
@@ -229,8 +212,11 @@ function triggerHover(chart, index) {
   }
   chart.update();
 }
+<<<<<<< HEAD
 =======
 >>>>>>> c1fb1d424e5e996b822f62734657afe3b7ad576c
+=======
+>>>>>>> 8ed3f30deb65f675cd657cc59acae2445ad0daa5
 
 function triggerHover(chart, index) {
     if (chart.getActiveElements().length > 0) {
