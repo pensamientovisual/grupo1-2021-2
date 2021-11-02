@@ -76,14 +76,12 @@ div.flex-container{
   display: flex;
 }
 
-div.internet{
+div.b-internet{
   position: absolute;
   left: 200px;
   border-radius: 20px;
   background-color: #ece8e5;
   margin: auto;
-  height: 300px;
-  width: 500px;
   text-align: center;
   
 }
@@ -93,15 +91,13 @@ div.internet{
 } */
 
  
-div.comercio{
+div.b-comercio{
   position: absolute;
   left:1000px;
   border-radius: 30px;
   background-color: #ece8e5;
   margin: auto;
   flex-direction: column;
-  height: 300px;
-  width: 500px;
   text-align: center;
 }
 
@@ -110,15 +106,13 @@ div.comercio{
   text-align: auto;
 } */
 
-div.telefonia{
+div.b-telefonia{
   position: absolute;
   right: 200px;
   border-radius: 20px;
   background-color: #ece8e5;
   margin: auto;
   margin-right: 50px;
-  height: 300px;
-  width: 500px;
   text-align: center;
 }
 
